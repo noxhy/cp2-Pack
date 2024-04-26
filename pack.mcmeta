@@ -2,7 +2,7 @@
     "pack": {
         "pack_format": 15,
         "supported_formats": [ 15, 22 ],
-        "description": "by Noah, pixlii, Francidium + Floophead"
+        "description": "by Noah, pixlii, Francidium, Floophead + endersaltz"
     },
 
     "overlays": {
