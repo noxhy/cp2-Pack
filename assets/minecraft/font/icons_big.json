@@ -1,0 +1,20 @@
+{
+    "providers":
+    [
+        {"type": "bitmap", "file": "font/icons/guns/bullseye.png", "ascent": 12, "height": 24, "chars": ["a"]},
+        {"type": "bitmap", "file": "font/icons/guns/apparition.png", "ascent": 12, "height": 24, "chars": ["b"]},
+        {"type": "bitmap", "file": "font/icons/guns/ghost.png", "ascent": 12, "height": 24, "chars": ["c"]},
+        {"type": "bitmap", "file": "font/icons/guns/optimism.png", "ascent": 12, "height": 24, "chars": ["d"]},
+        {"type": "bitmap", "file": "font/icons/guns/legacy.png", "ascent": 12, "height": 24, "chars": ["e"]},
+        {"type": "bitmap", "file": "font/icons/guns/inertia.png", "ascent": 12, "height": 24, "chars": ["f"]},
+        {"type": "bitmap", "file": "font/icons/guns/zedrick.png", "ascent": 12, "height": 24, "chars": ["g"]},
+        {"type": "bitmap", "file": "font/icons/guns/chucky.png", "ascent": 14, "height": 24, "chars": ["h"]},
+        {"type": "bitmap", "file": "font/icons/guns/cataclysm.png", "ascent": 12, "height": 24, "chars": ["i"]},
+        {"type": "bitmap", "file": "font/icons/guns/vision.png", "ascent": 12, "height": 24, "chars": ["j"]},
+        {"type": "bitmap", "file": "font/icons/guns/valkyrie.png", "ascent": 12, "height": 24, "chars": ["k"]},
+        {"type": "bitmap", "file": "font/icons/guns/phantom.png", "ascent": 12, "height": 24, "chars": ["l"]},
+        {"type": "bitmap", "file": "font/icons/guns/desolation.png", "ascent": 12, "height": 24, "chars": ["m"]}
+
+    ]
+
+}

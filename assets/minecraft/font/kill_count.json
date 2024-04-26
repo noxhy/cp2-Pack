@@ -1,0 +1,13 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "font/icons/kill_count/kill_count.png",
+      "ascent": 10,
+      "height": 12,
+      "chars": [
+        "12345"
+      ]
+    }
+  ]
+}

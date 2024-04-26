@@ -1,0 +1,15 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "font/bar/bar.png",
+      "ascent": 12,
+      "height": 12,
+      "chars": [
+        "[|]",
+        "{/}",
+        " \u0000\u0000"
+      ]
+    }
+  ]
+}

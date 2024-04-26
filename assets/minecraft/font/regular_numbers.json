@@ -1,0 +1,13 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "font/numbers/regular_numbers.png",
+      "ascent": 7,
+      "height": 7,
+      "chars": [
+        "0123456789"
+      ]
+    }
+  ]
+}

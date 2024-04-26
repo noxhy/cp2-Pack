@@ -1,0 +1,14 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "font/numbers/numbers_shaded.png",
+      "ascent": 8,
+      "height": 8,
+      "chars": [
+        "0123456789/.$",
+        " +⛨♠☠\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      ]
+    }
+  ]
+}

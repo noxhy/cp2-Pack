@@ -1,0 +1,31 @@
+{
+    "providers":
+    [
+        {"type": "bitmap", "file": "font/icons/guns/bullseye.png", "ascent": 7, "height": 8, "chars": ["a"]},
+        {"type": "bitmap", "file": "font/icons/guns/apparition.png", "ascent": 7, "height": 8, "chars": ["b"]},
+        {"type": "bitmap", "file": "font/icons/guns/ghost.png", "ascent": 8, "height": 8, "chars": ["c"]},
+        {"type": "bitmap", "file": "font/icons/guns/optimism.png", "ascent": 7, "height": 8, "chars": ["d"]},
+        {"type": "bitmap", "file": "font/icons/guns/legacy.png", "ascent": 8, "height": 8, "chars": ["e"]},
+        {"type": "bitmap", "file": "font/icons/guns/inertia.png", "ascent": 8, "height": 8, "chars": ["f"]},
+        {"type": "bitmap", "file": "font/icons/guns/zedrick.png", "ascent": 8, "height": 8, "chars": ["g"]},
+        {"type": "bitmap", "file": "font/icons/guns/chucky.png", "ascent": 8, "height": 8, "chars": ["h"]},
+        {"type": "bitmap", "file": "font/icons/guns/cataclysm.png", "ascent": 8, "height": 8, "chars": ["i"]},
+        {"type": "bitmap", "file": "font/icons/guns/vision.png", "ascent": 8, "height": 8, "chars": ["j"]},
+        {"type": "bitmap", "file": "font/icons/guns/valkyrie.png", "ascent": 8, "height": 8, "chars": ["k"]},
+        {"type": "bitmap", "file": "font/icons/guns/phantom.png", "ascent": 8, "height": 8, "chars": ["l"]},
+        {"type": "bitmap", "file": "font/icons/guns/desolation.png", "ascent": 8, "height": 8, "chars": ["m"]},
+        
+        {"type": "bitmap", "file": "font/icons/kill_icons/crosshair.png", "ascent": 8, "height": 9, "chars": ["#"]},
+        {"type": "bitmap", "file": "font/icons/items/defuse_kit.png", "ascent": 8, "height": 8, "chars": ["@"]},
+        {"type": "bitmap", "file": "font/icons/ping.png", "ascent": 8, "height": 24, "chars": ["$"]},
+        {"type": "bitmap", "file": "font/icons/items/grenade.png", "ascent": 7, "height": 8, "chars": ["A"]},
+        {"type": "bitmap", "file": "font/icons/items/smoke_grenade.png", "ascent": 7, "height": 8, "chars": ["B"]},
+        {"type": "bitmap", "file": "font/icons/items/flashbang.png", "ascent": 7, "height": 8, "chars": ["C"]},
+        {"type": "bitmap", "file": "font/icons/items/decoy_grenade.png", "ascent": 7, "height": 8, "chars": ["D"]},
+        {"type": "bitmap", "file": "font/icons/items/molotov.png", "ascent": 8, "height": 8, "chars": ["E"]},
+        {"type": "bitmap", "file": "font/icons/items/stim_shard.png", "ascent": 8, "height": 8, "chars": ["F"]},
+        {"type": "bitmap", "file": "font/icons/items/tracking_dart.png", "ascent": 7, "height": 8, "chars": ["G"]}
+
+    ]
+
+}

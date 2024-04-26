@@ -1,0 +1,16 @@
+{
+  "parent": "item/generated",
+  "textures": {
+  "layer0": "item/leather_leggings"
+  },
+
+  "overrides": [
+
+  {"predicate": {"custom_model_data":1}, "model": "item/guns/bullseye"},
+  {"predicate": {"custom_model_data":2}, "model": "item/guns/ghost"},
+  {"predicate": {"custom_model_data":3}, "model": "item/guns/optimism"},
+  {"predicate": {"custom_model_data":4}, "model": "item/guns/chucky"},
+  {"predicate": {"custom_model_data":5}, "model": "item/guns/zedrick"}
+
+  ]
+ }
