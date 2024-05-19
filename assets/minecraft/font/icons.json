@@ -16,8 +16,12 @@
         {"type": "bitmap", "file": "font/icons/guns/desolation.png", "ascent": 8, "height": 8, "chars": ["m"]},
         
         {"type": "bitmap", "file": "font/icons/kill_icons/crosshair.png", "ascent": 8, "height": 9, "chars": ["#"]},
+
+        {"type": "bitmap", "file": "font/icons/pings/ping.png", "ascent": 8, "height": 24, "chars": ["$"]},
+        {"type": "bitmap", "file": "font/icons/pings/death.png", "ascent": 8, "height": 16, "chars": ["&"]},
+        {"type": "bitmap", "file": "font/icons/pings/danger.png", "ascent": 8, "height": 16, "chars": ["%"]},
+
         {"type": "bitmap", "file": "font/icons/items/defuse_kit.png", "ascent": 8, "height": 8, "chars": ["@"]},
-        {"type": "bitmap", "file": "font/icons/ping.png", "ascent": 8, "height": 24, "chars": ["$"]},
         {"type": "bitmap", "file": "font/icons/items/grenade.png", "ascent": 7, "height": 8, "chars": ["A"]},
         {"type": "bitmap", "file": "font/icons/items/smoke_grenade.png", "ascent": 7, "height": 8, "chars": ["B"]},
         {"type": "bitmap", "file": "font/icons/items/flashbang.png", "ascent": 7, "height": 8, "chars": ["C"]},

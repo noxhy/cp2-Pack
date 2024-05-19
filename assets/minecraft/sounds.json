@@ -176,6 +176,17 @@
 		"replace":true,
 		"sounds":[{"name":"empty"}]
 	},
+	"block.suspicious_sand.step":
+	{
+		"replace":true,
+		"sounds":[{"name":"empty"}]
+	},
+	"block.suspicious_gravel.step":
+	{
+		"replace":true,
+		"sounds":[{"name":"empty"}]
+	},
+
 		"flash.long":
 	{
 		"sounds":[
@@ -186,6 +197,75 @@
 	{
 		"sounds":[
 		{"name":"flash/short"}
+		]
+	},
+
+		"voice.bomb_planted":
+	{
+		"sounds":[
+		{"name":"voice/bomb/planted"}
+		]
+	},
+		"voice.bomb_defused":
+	{
+		"sounds":[
+		{"name":"voice/bomb/defused"}
+		]
+	},
+
+		"voice.ct_win":
+	{
+		"sounds":[
+		{"name":"voice/win/ct_win"}
+		]
+	},
+		"voice.t_win":
+	{
+		"sounds":[
+		{"name":"voice/win/t_win"}
+		]
+	},
+		"voice.draw":
+	{
+		"sounds":[
+		{"name":"voice/win/draw"}
+		]
+	},
+
+		"anthem.test":
+	{
+		"sounds":[
+		{"name":"anthems/fortnite"}
+		]
+	},
+		"anthem.cupid":
+	{
+		"sounds":[
+		{"name":"anthems/michaelcupid"}
+		]
+	},
+		"anthem.baby":
+	{
+		"sounds":[
+		{"name":"anthems/baby"}
+		]
+	},
+		"anthem.hello":
+	{
+		"sounds":[
+		{"name":"anthems/hello"}
+		]
+	},
+		"anthem.bass_house":
+	{
+		"sounds":[
+		{"name":"anthems/basshouse"}
+		]
+	},
+		"anthem.acid_attack":
+	{
+		"sounds":[
+		{"name":"anthems/acid_attack"}
 		]
 	}
 
