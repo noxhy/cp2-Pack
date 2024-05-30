@@ -267,6 +267,12 @@
 		"sounds":[
 		{"name":"anthems/acid_attack"}
 		]
+	},
+		"anthem.diss_me":
+	{
+		"sounds":[
+		{"name":"anthems/dissme"}
+		]
 	}
 
 }
