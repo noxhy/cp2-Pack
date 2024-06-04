@@ -273,6 +273,12 @@
 		"sounds":[
 		{"name":"anthems/dissme"}
 		]
+	},
+		"anthem.rumble":
+	{
+		"sounds":[
+		{"name":"anthems/rumble"}
+		]
 	}
 
 }
