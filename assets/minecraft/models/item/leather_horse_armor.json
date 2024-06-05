@@ -6,14 +6,16 @@
 
   "overrides": [
 
-  {"predicate": {"custom_model_data":1}, "model": "item/guns/apparition"},
+  {"predicate": {"custom_model_data":1}, "model": "item/guns/ravager"},
   {"predicate": {"custom_model_data":2}, "model": "item/guns/valkyrie"},
-  {"predicate": {"custom_model_data":3}, "model": "item/guns/inertia"},
-  {"predicate": {"custom_model_data":4}, "model": "item/guns/legacy"},
-  {"predicate": {"custom_model_data":5}, "model": "item/guns/phantom"},
-  {"predicate": {"custom_model_data":6}, "model": "item/guns/desolation"},
-  {"predicate": {"custom_model_data":7}, "model": "item/guns/vision"},
-  {"predicate": {"custom_model_data":8}, "model": "item/guns/cataclysm"}
+  {"predicate": {"custom_model_data":3}, "model": "item/guns/valkyrie"},
+  {"predicate": {"custom_model_data":4}, "model": "item/guns/inertia"},
+  {"predicate": {"custom_model_data":5}, "model": "item/guns/legacy"},
+  {"predicate": {"custom_model_data":6}, "model": "item/guns/phantom"},
+  {"predicate": {"custom_model_data":7}, "model": "item/guns/desolation"},
+  {"predicate": {"custom_model_data":8}, "model": "item/guns/desolation"},
+  {"predicate": {"custom_model_data":9}, "model": "item/guns/vision"},
+  {"predicate": {"custom_model_data":10}, "model": "item/guns/cataclysm"}
 
   ]
  }
