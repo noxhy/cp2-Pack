@@ -14,7 +14,7 @@
         {"type": "bitmap", "file": "font/icons/guns/valkyrie.png", "ascent": 8, "height": 8, "chars": ["k"]},
         {"type": "bitmap", "file": "font/icons/guns/phantom.png", "ascent": 8, "height": 8, "chars": ["l"]},
         {"type": "bitmap", "file": "font/icons/guns/desolation.png", "ascent": 8, "height": 8, "chars": ["m"]},
-        {"type": "bitmap", "file": "font/icons/guns/bullseye.png", "ascent": 7, "height": 8, "chars": ["n"]}
+        {"type": "bitmap", "file": "font/icons/guns/bullseye.png", "ascent": 7, "height": 8, "chars": ["n"]},
         
         {"type": "bitmap", "file": "font/icons/kill_icons/crosshair.png", "ascent": 8, "height": 9, "chars": ["#"]},
 
