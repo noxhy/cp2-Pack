@@ -2,7 +2,7 @@
     "providers":
     [
         {"type": "bitmap", "file": "font/icons/guns/deadlock.png", "ascent": 7, "height": 8, "chars": ["a"]},
-        {"type": "bitmap", "file": "font/icons/guns/apparition.png", "ascent": 7, "height": 8, "chars": ["b"]},
+        {"type": "bitmap", "file": "font/icons/guns/ravager.png", "ascent": 7, "height": 8, "chars": ["b"]},
         {"type": "bitmap", "file": "font/icons/guns/ghost.png", "ascent": 8, "height": 8, "chars": ["c"]},
         {"type": "bitmap", "file": "font/icons/guns/optimism.png", "ascent": 7, "height": 8, "chars": ["d"]},
         {"type": "bitmap", "file": "font/icons/guns/legacy.png", "ascent": 8, "height": 8, "chars": ["e"]},
@@ -15,6 +15,7 @@
         {"type": "bitmap", "file": "font/icons/guns/phantom.png", "ascent": 8, "height": 8, "chars": ["l"]},
         {"type": "bitmap", "file": "font/icons/guns/desolation.png", "ascent": 8, "height": 8, "chars": ["m"]},
         {"type": "bitmap", "file": "font/icons/guns/bullseye.png", "ascent": 7, "height": 8, "chars": ["n"]},
+        {"type": "bitmap", "file": "font/icons/guns/apparition.png", "ascent": 8, "height": 8, "chars": ["o"]},
         
         {"type": "bitmap", "file": "font/icons/kill_icons/crosshair.png", "ascent": 8, "height": 9, "chars": ["#"]},
 
@@ -36,7 +37,9 @@
         {"type": "bitmap", "file": "font/icons/rank/gold.png", "ascent": 8, "height": 8, "chars": ["3"]},
         {"type": "bitmap", "file": "font/icons/rank/jade.png", "ascent": 8, "height": 8, "chars": ["4"]},
         {"type": "bitmap", "file": "font/icons/rank/diamond.png", "ascent": 8, "height": 8, "chars": ["5"]},
-        {"type": "bitmap", "file": "font/icons/rank/amethyst.png", "ascent": 8, "height": 8, "chars": ["6"]}
+        {"type": "bitmap", "file": "font/icons/rank/amethyst.png", "ascent": 8, "height": 8, "chars": ["6"]},
+        {"type": "bitmap", "file": "font/icons/lock.png", "ascent": 8, "height": 8, "chars": ["7"]},
+        {"type": "bitmap", "file": "font/icons/unlocked.png", "ascent": 8, "height": 8, "chars": ["8"]}
 
 
     ]
