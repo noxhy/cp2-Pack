@@ -29,7 +29,15 @@
         {"type": "bitmap", "file": "font/icons/items/decoy_grenade.png", "ascent": 7, "height": 8, "chars": ["D"]},
         {"type": "bitmap", "file": "font/icons/items/molotov.png", "ascent": 8, "height": 8, "chars": ["E"]},
         {"type": "bitmap", "file": "font/icons/items/stim_shard.png", "ascent": 8, "height": 8, "chars": ["F"]},
-        {"type": "bitmap", "file": "font/icons/items/tracking_dart.png", "ascent": 7, "height": 8, "chars": ["G"]}
+        {"type": "bitmap", "file": "font/icons/items/tracking_dart.png", "ascent": 7, "height": 8, "chars": ["G"]},
+
+        {"type": "bitmap", "file": "font/icons/rank/copper.png", "ascent": 8, "height": 8, "chars": ["1"]},
+        {"type": "bitmap", "file": "font/icons/rank/iron.png", "ascent": 8, "height": 8, "chars": ["2"]},
+        {"type": "bitmap", "file": "font/icons/rank/gold.png", "ascent": 8, "height": 8, "chars": ["3"]},
+        {"type": "bitmap", "file": "font/icons/rank/jade.png", "ascent": 8, "height": 8, "chars": ["4"]},
+        {"type": "bitmap", "file": "font/icons/rank/diamond.png", "ascent": 8, "height": 8, "chars": ["5"]},
+        {"type": "bitmap", "file": "font/icons/rank/amethyst.png", "ascent": 8, "height": 8, "chars": ["6"]}
+
 
     ]
 
