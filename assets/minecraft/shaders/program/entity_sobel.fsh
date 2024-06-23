@@ -2,6 +2,10 @@
 
 #define FLASH vec3(212., 212., 212.) // #D4D4D4
 
+#define TEAM_DM vec3(255., 205., 40.)// #ffcd28
+#define TEAM_T vec3(237., 76., 103.) // #ed4c67
+#define TEAM_CT vec3(38., 222., 129.) // #26de81
+
 #define LIGHT_PURPLE vec3(255., 85., 255.)
 #define DARK_PURPLE vec3(170., 0., 170.)
 #define WHITE vec3(255., 255., 255.)
@@ -29,5 +33,7 @@ void main(){
     if (isColor(fragColor, FLASH)) {fragColor.rgb = vec3(1.,1.,1.);}
     // DO NOT UNCOMMENT ITS THE SEIZURE ANTI F1
     // if (isColor(fragColor, FLASH)) {fragColor.rgb *= mod(Time*1000, 2);}
+
+    if (isColor(fragColor,TEAM_CT) || isColor(fragColor,TEAM_T) || isColor(fragColor,TEAM_DM)) {fragColor.a = 0.3;}
     
 }
