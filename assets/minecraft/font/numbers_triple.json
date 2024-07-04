@@ -1,0 +1,14 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "font/numbers/numbers.png",
+      "ascent": 16,
+      "height": 16,
+      "chars": [
+        "0123456789/.$",
+        " +⛨♠☠\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      ]
+    }
+  ]
+}

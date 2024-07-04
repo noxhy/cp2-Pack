@@ -1,0 +1,16 @@
+{
+  "parent": "item/generated",
+  "textures": {
+  "layer0": "item/gray_candle"
+  },
+
+  "overrides": [
+
+  {"predicate": {"custom_model_data":1}, "model": "item/items/smoke_grenade"},
+  {"predicate": {"custom_model_data":2}, "model": "item/items/grenade"},
+  {"predicate": {"custom_model_data":3}, "model": "item/items/molotov"},
+  {"predicate": {"custom_model_data":4}, "model": "item/items/flashbang"},
+  {"predicate": {"custom_model_data":5}, "model": "item/items/decoy"}
+
+  ]
+ }

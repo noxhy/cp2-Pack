@@ -1,0 +1,7 @@
+{
+    "providers":
+    [
+        {"type": "bitmap", "file": "font/emojis/sunglasses.png", "ascent": 8, "height": 8, "chars": ["█"]}
+    ]
+
+}

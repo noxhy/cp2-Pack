@@ -1,0 +1,14 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "font/numbers/general_numbers.png",
+      "ascent": 20,
+      "height": 20,
+      "chars": [
+        "0123456789",
+        "./-$% +⛨♠☠"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+	"providers":[
+		{
+			"type": "bitmap",
+			"file": "gui/crosshairs.png",
+			"ascent": 7,
+			"height": 7,
+			"chars": ["c"]
+		}
+	]
+}
