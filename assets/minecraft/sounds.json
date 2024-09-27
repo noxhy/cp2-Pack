@@ -186,6 +186,16 @@
 		"replace":true,
 		"sounds":[{"name":"empty"}]
 	},
+	"block.nether_bricks.step":
+	{
+		"replace":true,
+		"sounds":[{"name":"empty"}]
+	},
+	"block.nether_wood.step":
+	{
+		"replace":true,
+		"sounds":[{"name":"empty"}]
+	},
 
 		"flash.long":
 	{
