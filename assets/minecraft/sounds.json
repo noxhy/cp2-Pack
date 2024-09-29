@@ -289,6 +289,12 @@
 		"sounds":[
 		{"name":"anthems/rumble"}
 		]
+	},
+	"anthem.one_beer":
+	{
+		"sounds":[
+		{"name":"anthems/onebeer"}
+		]
 	}
 
 }

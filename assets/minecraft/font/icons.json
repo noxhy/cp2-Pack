@@ -24,6 +24,8 @@
         {"type": "bitmap", "file": "font/icons/pings/danger.png", "ascent": 8, "height": 16, "chars": ["%"]},
 
         {"type": "bitmap", "file": "font/icons/items/defuse_kit.png", "ascent": 8, "height": 8, "chars": ["@"]},
+        {"type": "bitmap", "file": "font/icons/items/bomb.png", "ascent": 8, "height": 8, "chars": ["*"]},
+        {"type": "bitmap", "file": "font/icons/items/briefcase.png", "ascent": 8, "height": 8, "chars": ["("]},
         {"type": "bitmap", "file": "font/icons/items/grenade.png", "ascent": 7, "height": 8, "chars": ["A"]},
         {"type": "bitmap", "file": "font/icons/items/smoke_grenade.png", "ascent": 7, "height": 8, "chars": ["B"]},
         {"type": "bitmap", "file": "font/icons/items/flashbang.png", "ascent": 7, "height": 8, "chars": ["C"]},
