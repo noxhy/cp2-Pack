@@ -238,6 +238,12 @@
 		{"name":"voice/bomb/defused"}
 		]
 	},
+		"voice.safe_compromised":
+	{
+		"sounds":[
+		{"name":"voice/heist/safe_compromised"}
+		]
+	},
 
 		"voice.ct_win":
 	{
