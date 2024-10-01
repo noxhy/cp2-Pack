@@ -22,6 +22,7 @@
         {"type": "bitmap", "file": "font/icons/pings/ping.png", "ascent": 8, "height": 24, "chars": ["$"]},
         {"type": "bitmap", "file": "font/icons/pings/death.png", "ascent": 8, "height": 16, "chars": ["&"]},
         {"type": "bitmap", "file": "font/icons/pings/danger.png", "ascent": 8, "height": 16, "chars": ["%"]},
+        {"type": "bitmap", "file": "font/icons/pings/down_arrow.png", "ascent": 8, "height": 16, "chars": [")"]},
 
         {"type": "bitmap", "file": "font/icons/items/defuse_kit.png", "ascent": 8, "height": 8, "chars": ["@"]},
         {"type": "bitmap", "file": "font/icons/items/bomb.png", "ascent": 8, "height": 8, "chars": ["*"]},
