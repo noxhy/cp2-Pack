@@ -196,6 +196,22 @@
 		"replace":true,
 		"sounds":[{"name":"empty"}]
 	},
+	"block.azalea.step":
+	{
+		"replace":true,
+		"sounds":[{"name":"empty"}]
+	},
+
+	"block.azalea_leaves.step":
+	{
+		"replace":true,
+		"sounds":[{"name":"empty"}]
+	},
+	"block.flowering_azalea.step":
+	{
+		"replace":true,
+		"sounds":[{"name":"empty"}]
+	},
 
 		"flash.long":
 	{

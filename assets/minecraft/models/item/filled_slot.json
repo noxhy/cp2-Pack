@@ -4,6 +4,7 @@
 	"textures": {
 		"layer0": "item/filled_slot"
 	},
+	"gui_light": "front",
 	"display": {
 		"gui": {
 			"scale": [1.1, 1.1, 1.1]
