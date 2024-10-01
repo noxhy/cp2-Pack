@@ -244,6 +244,12 @@
 		{"name":"voice/heist/safe_compromised"}
 		]
 	},
+		"voice.terrorist_escaped":
+	{
+		"sounds":[
+		{"name":"voice/heist/terrorist_escaped"}
+		]
+	},
 
 		"voice.ct_win":
 	{
