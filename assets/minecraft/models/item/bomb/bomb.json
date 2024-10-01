@@ -109,12 +109,12 @@
 		},
 		"firstperson_righthand": {
 			"rotation": [26.01, -48.02, 17.18],
-			"translation": [-1.5, 8, 1.25],
+			"translation": [-1.5, 5.75, 1.25],
 			"scale": [0.8, 0.8, 0.8]
 		},
 		"firstperson_lefthand": {
 			"rotation": [26.01, -48.02, 17.18],
-			"translation": [-1.5, 8, 1.25],
+			"translation": [-1.5, 5.75, 1.25],
 			"scale": [0.8, 0.8, 0.8]
 		},
 		"ground": {
