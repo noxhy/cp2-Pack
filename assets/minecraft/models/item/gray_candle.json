@@ -13,7 +13,8 @@
   {"predicate": {"custom_model_data":5}, "model": "item/items/decoy"},
   {"predicate": {"custom_model_data":6}, "model": "item/items/safe_closed"},
   {"predicate": {"custom_model_data":7}, "model": "item/items/safe_open_empty"},
-  {"predicate": {"custom_model_data":8}, "model": "item/items/safe_open_full"}
+  {"predicate": {"custom_model_data":8}, "model": "item/items/safe_open_full"},
+  {"predicate": {"custom_model_data":9}, "model": "item/items/tracking_dart"}
 
   ]
  }
