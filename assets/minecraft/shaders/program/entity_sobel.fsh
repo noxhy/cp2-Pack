@@ -1,6 +1,7 @@
 #version 150
 
 #define FLASH vec3(212., 212., 212.) // #D4D4D4
+#define VEIL vec3(69., 67., 38.) // #454326
 
 #define TEAM_DM vec3(255., 205., 40.)// #ffcd28
 #define TEAM_T vec3(237., 76., 103.) // #ed4c67
@@ -31,6 +32,13 @@ void main(){
     if (isColor(fragColor, WHITE)) {fragColor.a = 0.2;}
 
     if (isColor(fragColor, FLASH)) {fragColor.rgb = vec3(1.,1.,1.);}
+    if (isColor(fragColor, VEIL)) {
+
+            float trans = length((vec2(gl_FragCoord.x - ScreenSize.x / 2, gl_FragCoord.y - ScreenSize.y / 2)) / ScreenSize.x)/6;
+            trans += 0.002;
+
+            fragColor.rgba = vec4(0.137,0.35,0.91,trans);
+        }
     // DO NOT UNCOMMENT ITS THE SEIZURE ANTI F1
     // if (isColor(fragColor, FLASH)) {fragColor.rgb *= mod(Time*1000, 2);}
 
