@@ -35,7 +35,7 @@ void main(){
     if (isColor(fragColor, VEIL)) {
 
             float trans = length((vec2(gl_FragCoord.x - ScreenSize.x / 2, gl_FragCoord.y - ScreenSize.y / 2)) / ScreenSize.x)/6;
-            trans += 0.002;
+            trans += 0.1;
 
             fragColor.rgba = vec4(0.137,0.35,0.91,trans);
         }
