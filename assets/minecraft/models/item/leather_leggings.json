@@ -12,7 +12,7 @@
   {"predicate": {"custom_model_data":4}, "model": "item/guns/chucky"},
   {"predicate": {"custom_model_data":5}, "model": "item/guns/zedrick"},
   {"predicate": {"custom_model_data":6}, "model": "item/guns/bullseye"},
-  {"predicate": {"custom_model_data":7}, "model": "item/guns/pixlii_deadlock"}
+  {"predicate": {"custom_model_data":7}, "model": "item/guns/deadlock/pixlii_deadlock"}
 
   ]
  }
