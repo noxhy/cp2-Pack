@@ -129,8 +129,7 @@ void main()
         vec2 center = getCenter( Sampler2, id );
         center.y /= ScreenSize.y / gui_scale * 1.;
 
-        gl_Position.x -= ( gui_scale * 0.5 ) / ScreenSize.x;
-        gl_Position.y = 0.-center.y-( gui_scale * 0.5 ) / ScreenSize.y;
+        gl_Position.y += ( gui_scale * 33 ) / ScreenSize.y;
 
         if ( isColor( Color, CROSSHAIR ) ) vertexColor.rgb = vec3( 1., 1., 1. );
 
