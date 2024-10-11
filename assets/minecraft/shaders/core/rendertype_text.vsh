@@ -126,9 +126,6 @@ void main()
     if( isEither( Color, CROSSHAIR ) )
     {
 
-        vec2 center = getCenter( Sampler2, id );
-        center.y /= ScreenSize.y / gui_scale * 1.;
-
         gl_Position.y += ( gui_scale * 33 ) / ScreenSize.y;
 
         if ( isColor( Color, CROSSHAIR ) ) vertexColor.rgb = vec3( 1., 1., 1. );
@@ -239,6 +236,20 @@ void main()
         }
 
         if ( isShadow( Color, SCOPE ) ) vertexColor.a = 0;
+
+    }
+
+    if ( isEither( Color, SELECTED ) )
+    {
+
+        if ( isColor( Color, SELECTED ) ) 
+        {
+            
+            vertexColor.rgb = hsv2rgb( vec3( 0.7, 0.44, ( 0.9 + ( sin( ( ( GameTimeSeconds + ( gl_Position.x / ScreenSize.x ) * -5 ) / 2.5 ) * 12.5 ) ) * 0.1 ) ) );
+        }
+
+
+        gl_Position.y += ( gui_scale * ( ( sin( ( GameTimeSeconds + gl_Position.x * 28. ) * 5. ) * 2. ) ) ) / ScreenSize.y;
 
     }
 

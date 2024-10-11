@@ -25,6 +25,7 @@
 #define SCOPE vec3( 51., 51., 51. ) // #333333
 
 #define SKYBOX vec3(76., 64., 22.) // #4C4016
+#define SELECTED vec3( 76., 64., 23. ) // #4C4017
 
 bool isColor(vec4 originColor, vec3 color) {
     return (originColor*255.).xyz == color;
