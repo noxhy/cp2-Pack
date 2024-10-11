@@ -23,6 +23,7 @@ uniform vec2 ScreenSize;
 out float vertexDistance;
 out vec4 vertexColor;
 out vec2 texCoord0;
+out boolean is_shadow;
 
 float GameTimeSeconds = GameTime * 1200;
 
@@ -245,11 +246,29 @@ void main()
         if ( isColor( Color, SELECTED ) ) 
         {
             
-            vertexColor.rgb = hsv2rgb( vec3( 0.7, 0.44, ( 0.9 + ( sin( ( ( GameTimeSeconds + ( gl_Position.x / ScreenSize.x ) * -5 ) / 2.5 ) * 12.5 ) ) * 0.1 ) ) );
+            vertexColor.rgb = hsv2rgb( vec3( 0.33, 0.44, ( 0.9 + ( sin( ( ( GameTimeSeconds + ( gl_Position.x / ScreenSize.x ) * -5 ) / 2.5 ) * 12.5 ) ) * 0.1 ) ) );
+        }
+
+    }
+
+    if ( isEither( Color, GOLDEN ) )
+    {
+
+        if ( isColor( Color, GOLDEN ) ) 
+        {
+            
+            vertexColor.rgb = hsv2rgb( vec3( ( 0.11 + ( sin( ( ( GameTimeSeconds + ( gl_Position.x / ScreenSize.x ) * -160. ) / 2.5 ) * 12.5 ) ) * 0.02 ) , ( 0.9 + ( cos( ( ( GameTimeSeconds + gl_Position.x * 0.2 ) / 5 ) ) ) * 0.1 ), 1. ) );
+            is_shadow = false;
         }
 
 
-        gl_Position.y += ( gui_scale * ( ( sin( ( GameTimeSeconds + gl_Position.x * 28. ) * 5. ) * 2. ) ) ) / ScreenSize.y;
+        if ( isShadow( Color, GOLDEN ) )
+        {
+
+            getShadow( hsv2rgb( vec3( ( 0.11 + ( sin( ( ( GameTimeSeconds + ( gl_Position.x / ScreenSize.x ) * -25 ) / 2.5 ) * 12.5 ) ) * 0.02 ) , 0.57, 1. ) ) );
+            is_shadow = true;
+
+        }
 
     }
 
