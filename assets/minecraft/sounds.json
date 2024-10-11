@@ -212,6 +212,11 @@
 		"replace":true,
 		"sounds":[{"name":"empty"}]
 	},
+	"block.fire.ambient":
+	{
+		"replace":true,
+		"sounds":[{"name":"empty"}]
+	},
 
 		"flash.long":
 	{
