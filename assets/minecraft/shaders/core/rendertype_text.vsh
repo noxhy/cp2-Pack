@@ -1,4 +1,6 @@
 #version 150
+#define VSH
+#define RENDERTYPE_TEXT
 
 #moj_import <fog.glsl>
 #moj_import <colours.glsl>
@@ -6,11 +8,14 @@
 
 #define PI 3.14159265
 
+// These are inputs and outputs to the shader
+// If you are merging with a shader, put any inputs and outputs that they have, but are not here already, in the list below
 in vec3 Position;
 in vec4 Color;
 in vec2 UV0;
 in ivec2 UV2;
 
+uniform sampler2D Sampler0;
 uniform sampler2D Sampler2;
 
 uniform mat4 ModelViewMat;
@@ -20,9 +25,14 @@ uniform float GameTime;
 uniform int FogShape;
 uniform vec2 ScreenSize;
 
+
 out float vertexDistance;
 out vec4 vertexColor;
 out vec2 texCoord0;
+out vec4 baseColor;
+out vec4 lightColor;
+
+#moj_import <spheya_packs_impl.glsl>
 
 float GameTimeSeconds = GameTime * 1200;
 
@@ -257,6 +267,8 @@ void main()
         {
             
             vertexColor.rgb = hsv2rgb( vec3( ( 0.11 + ( sin( ( ( GameTimeSeconds + ( gl_Position.x / ScreenSize.x ) * -160. ) / 3. ) * 12.5 ) ) * 0.02 ) , ( 0.9 + ( cos( ( ( GameTimeSeconds + gl_Position.x * 0.2 ) / 5 ) ) ) * 0.1 ), 1. ) );
+            apply_waving_movement( 12.5 );
+            
         }
 
 

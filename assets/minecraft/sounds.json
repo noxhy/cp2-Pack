@@ -280,13 +280,6 @@
 		{"name":"voice/win/draw"}
 		]
 	},
-
-		"anthem.test":
-	{
-		"sounds":[
-		{"name":"anthems/fortnite"}
-		]
-	},
 		"anthem.cupid":
 	{
 		"sounds":[
