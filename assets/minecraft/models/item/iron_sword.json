@@ -5,6 +5,8 @@
   },
 
   "overrides": [
-  {"predicate": {"custom_model_data":1}, "model": "item/knives/knife"}
+  {"predicate": {"custom_model_data":1}, "model": "item/knives/knife"},
+  {"predicate": {"custom_model_data":10}, "model": "item/knives/knifeageddon"},
+  {"predicate": {"custom_model_data":11}, "model": "item/knives/knife"}
   ]
  }
