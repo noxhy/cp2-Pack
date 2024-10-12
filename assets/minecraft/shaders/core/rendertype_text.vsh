@@ -267,8 +267,7 @@ void main()
         {
             
             vertexColor.rgb = hsv2rgb( vec3( ( 0.11 + ( sin( ( ( GameTimeSeconds + ( gl_Position.x / ScreenSize.x ) * -160. ) / 3. ) * 12.5 ) ) * 0.02 ) , ( 0.9 + ( cos( ( ( GameTimeSeconds + gl_Position.x * 0.2 ) / 5 ) ) ) * 0.1 ), 1. ) );
-            apply_waving_movement( 12.5 );
-            
+
         }
 
 
