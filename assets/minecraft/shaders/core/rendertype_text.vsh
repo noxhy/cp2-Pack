@@ -256,14 +256,14 @@ void main()
         if ( isColor( Color, GOLDEN ) ) 
         {
             
-            vertexColor.rgb = hsv2rgb( vec3( ( 0.11 + ( sin( ( ( GameTimeSeconds + ( gl_Position.x / ScreenSize.x ) * -160. ) / 2.5 ) * 12.5 ) ) * 0.02 ) , ( 0.9 + ( cos( ( ( GameTimeSeconds + gl_Position.x * 0.2 ) / 5 ) ) ) * 0.1 ), 1. ) );
+            vertexColor.rgb = hsv2rgb( vec3( ( 0.11 + ( sin( ( ( GameTimeSeconds + ( gl_Position.x / ScreenSize.x ) * -160. ) / 3. ) * 12.5 ) ) * 0.02 ) , ( 0.9 + ( cos( ( ( GameTimeSeconds + gl_Position.x * 0.2 ) / 5 ) ) ) * 0.1 ), 1. ) );
         }
 
 
         if ( isShadow( Color, GOLDEN ) )
         {
 
-            getShadow( hsv2rgb( vec3( ( 0.11 + ( sin( ( ( GameTimeSeconds + ( gl_Position.x / ScreenSize.x ) * -25 ) / 2.5 ) * 12.5 ) ) * 0.02 ) , 0.57, 1. ) ) );
+            vertexColor.rgb = getShadow( hsv2rgb( vec3( ( 0.11 + ( sin( ( ( GameTimeSeconds + ( gl_Position.x / ScreenSize.x ) * -25 ) / 2.5 ) * 12.5 ) ) * 0.02 ) , 0.57, 1. ) ) ).rgb;
 
         }
 
