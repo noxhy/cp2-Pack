@@ -443,6 +443,10 @@ void apply_non_binary_pride() {
     if(textData.isShadow) textData.color.rgb *= 0.25;
 }
 
+void apply_stupid_noah_gold() {
+    textData.color.rgb = hsvToRgb( vec3( ( 0.11 + ( sin( ( ( GameTime * 1200 + ( textData.position.x / 1000. ) * -25 ) / 2.5 ) * 12.5 ) ) * 0.02 ) , 0.57, 1. ) );
+}
+
 #define TEXT_EFFECT(r, g, b) return true; case ((uint(r/4) << 16) | (uint(g/4) << 8) | (uint(b/4))):
 
 bool applyTextEffects() { 
@@ -456,11 +460,9 @@ bool applyTextEffects() {
         //#####
 
         // Golden Color
-        TEXT_EFFECT( 76, 64, 24 )
-        { 
-
-            apply_outline( rgb( 42, 42, 71 ) );
-            
+        TEXT_EFFECT(76,64,24){
+            apply_stupid_noah_gold();
+            apply_outline(rgb(42,42,71));
         }
     
         return true; 

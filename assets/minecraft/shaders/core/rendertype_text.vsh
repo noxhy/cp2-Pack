@@ -41,9 +41,15 @@ void main()
 
     gl_Position = ProjMat * ModelViewMat * vec4( Position, 1.0 );
 
+    baseColor = Color;
+    lightColor = texelFetch(Sampler2, UV2 / 16, 0);
+
+
     vertexDistance = fog_distance( ModelViewMat, IViewRotMat * Position, FogShape );
     vertexColor = Color * texelFetch( Sampler2, UV2 / 16, 0 );
     texCoord0 = UV0;
+
+    if(applySpheyaPacks()) return;
 
     int gui_scale = guiScale( ProjMat, ScreenSize );
     int id = gl_VertexID % 4;
