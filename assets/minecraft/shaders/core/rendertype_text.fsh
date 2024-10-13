@@ -34,10 +34,10 @@ void main() {
     // If you are merging with another shader, replace the code below here with the code that they have in their main() function
 
     vec4 color = texture(Sampler0, texCoord0) * vertexColor * ColorModulator;
-    if (color.a < 0.1) {
-        if (!(((vertexColor.x * 255.0) == 240.0 && (vertexColor.y * 255.0) == 242.0 && (vertexColor.z * 255.0) == 242.0) || ((vertexColor.x * 255.0) == 168.0 && (vertexColor.y * 255.0) == 242.0 && (vertexColor.z * 255.0) == 242.0) || ((vertexColor.x * 255.0) == 164.0 && (vertexColor.y * 255.0) == 242.0 && (vertexColor.z * 255.0) == 242.0))) {
-           discard;
-        }
+    if (color.a < 0.1)
+    {
+        discard;
     }
+
     fragColor = linear_fog(color, vertexDistance, FogStart, FogEnd, FogColor);
 }
