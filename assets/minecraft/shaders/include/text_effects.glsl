@@ -462,7 +462,7 @@ bool applyTextEffects() {
         // Golden Color
         TEXT_EFFECT(76,64,24){
             apply_stupid_noah_gold();
-            apply_outline(rgb(42,42,71));
+            apply_outline(rgb(120,68,0));
         }
     
         return true; 
