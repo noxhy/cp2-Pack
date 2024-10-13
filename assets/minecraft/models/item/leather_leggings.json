@@ -6,13 +6,21 @@
 
   "overrides": [
 
-  {"predicate": {"custom_model_data":1}, "model": "item/guns/deadlock"},
-  {"predicate": {"custom_model_data":2}, "model": "item/guns/ghost"},
-  {"predicate": {"custom_model_data":3}, "model": "item/guns/optimism"},
-  {"predicate": {"custom_model_data":4}, "model": "item/guns/chucky"},
-  {"predicate": {"custom_model_data":5}, "model": "item/guns/zedrick"},
-  {"predicate": {"custom_model_data":6}, "model": "item/guns/bullseye"},
-  {"predicate": {"custom_model_data":7}, "model": "item/guns/deadlock/pixlii_deadlock"}
+  {"predicate": {"custom_model_data":1}, "model": "item/guns/deadlock/deadlock"},
+  {"predicate": {"custom_model_data":2}, "model": "item/guns/ghost/ghost"},
+  {"predicate": {"custom_model_data":3}, "model": "item/guns/optimism/optimism"},
+  {"predicate": {"custom_model_data":4}, "model": "item/guns/chucky/chucky"},
+  {"predicate": {"custom_model_data":5}, "model": "item/guns/zedrick/zedrick"},
+  {"predicate": {"custom_model_data":6}, "model": "item/guns/bullseye/bullseye"},
+  
+  {"predicate": {"custom_model_data":7}, "model": "item/guns/deadlock/pixlii_deadlock"},
+  {"predicate": {"custom_model_data":8}, "model": "item/guns/zedrick/pixlii_zedrick"},
+  {"predicate": {"custom_model_data":9}, "model": "item/guns/ghost/royal_ghost"},
+  {"predicate": {"custom_model_data":10}, "model": "item/guns/ghost/ghost_ghost"},
+  {"predicate": {"custom_model_data":11}, "model": "item/guns/bullseye/pumpkin"},
+  {"predicate": {"custom_model_data":12}, "model": "item/guns/bullseye/sheriff"},
+  {"predicate": {"custom_model_data":13}, "model": "item/guns/deadlock/partypopper"},
+  {"predicate": {"custom_model_data":14}, "model": "item/guns/chucky/silver"}
 
   ]
  }

@@ -1,0 +1,15 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+  "layer0": "item/leather_boots"
+  },
+
+  "overrides": [
+
+  {"predicate": {"custom_model_data":1}, "model": "item/knives/knife"},
+  {"predicate": {"custom_model_data":2}, "model": "item/knives/crescent_blade"},
+  {"predicate": {"custom_model_data":3}, "model": "item/knives/skeleton_knife"},
+  {"predicate": {"custom_model_data":10}, "model": "item/knives/knifeageddon"}
+
+  ]
+ }

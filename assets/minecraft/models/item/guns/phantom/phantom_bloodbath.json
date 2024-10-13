@@ -1,0 +1,9 @@
+{
+	"parent": "item/guns/phantom/phantom",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "item/guns/phantom/phantom_bloodbath",
+		"particle": "item/guns/phantom/phantom_bloodbath"
+	}
+
+}
