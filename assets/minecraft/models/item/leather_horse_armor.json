@@ -8,7 +8,7 @@
 
   {"predicate": {"custom_model_data":1}, "model": "item/guns/ravager/ravager"},
   {"predicate": {"custom_model_data":2}, "model": "item/guns/valkyrie/valkyrie"},
-  {"predicate": {"custom_model_data":3}, "model": "item/guns/valkyrie/valkyrie"},
+  {"predicate": {"custom_model_data":3}, "model": "item/guns/warden/warden"},
   {"predicate": {"custom_model_data":4}, "model": "item/guns/inertia/inertia"},
   {"predicate": {"custom_model_data":5}, "model": "item/guns/legacy/legacy"},
   {"predicate": {"custom_model_data":6}, "model": "item/guns/phantom/phantom"},
@@ -16,9 +16,9 @@
   {"predicate": {"custom_model_data":8}, "model": "item/guns/desolation/desolation"},
   {"predicate": {"custom_model_data":9}, "model": "item/guns/vision/vision"},
   {"predicate": {"custom_model_data":10}, "model": "item/guns/cataclysm/cataclysm"},
-  {"predicate": {"custom_model_data":11}, "model": "item/guns/apparition/apparition"},
+  {"predicate": {"custom_model_data":11}, "model": "item/guns/apparition/pixlii_apparition"},
 
-  {"predicate": {"custom_model_data":12}, "model": "item/guns/apparition/pixlii_apparition"},
+  {"predicate": {"custom_model_data":12}, "model": "item/guns/apparition/apparition"},
   {"predicate": {"custom_model_data":13}, "model": "item/guns/vision/pixlii_vision"},
   {"predicate": {"custom_model_data":14}, "model": "item/guns/desolation/royal_desolation"},
   {"predicate": {"custom_model_data":15}, "model": "item/guns/vision/royal_vision"},

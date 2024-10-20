@@ -16,6 +16,7 @@
         {"type": "bitmap", "file": "font/icons/guns/desolation.png", "ascent": 8, "height": 8, "chars": ["m"]},
         {"type": "bitmap", "file": "font/icons/guns/bullseye.png", "ascent": 7, "height": 8, "chars": ["n"]},
         {"type": "bitmap", "file": "font/icons/guns/apparition.png", "ascent": 8, "height": 8, "chars": ["o"]},
+        {"type": "bitmap", "file": "font/icons/guns/warden.png", "ascent": 8, "height": 8, "chars": ["p"]},
         
         {"type": "bitmap", "file": "font/icons/kill_icons/crosshair.png", "ascent": 8, "height": 9, "chars": ["#"]},
 
