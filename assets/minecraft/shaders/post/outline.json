@@ -5,7 +5,7 @@
     ],
     "passes": [
       {
-        "name": "entity_outline",
+        "name": "outline",
         "intarget": "final",
         "outtarget": "swap"
       },
