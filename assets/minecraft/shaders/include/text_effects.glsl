@@ -443,7 +443,7 @@ void apply_non_binary_pride() {
     if(textData.isShadow) textData.color.rgb *= 0.25;
 }
 
-void apply_stupid_noah_gold() {
+void apply_gold() {
     textData.color.rgb = hsvToRgb( vec3( ( 0.11 + ( sin( ( ( GameTime * 1200 + ( textData.position.x / 1000. ) * -25 ) / 2.5 ) * 12.5 ) ) * 0.02 ) , 0.57, 1. ) );
 }
 
@@ -459,10 +459,27 @@ bool applyTextEffects() {
         //INSERT TEXT EFFECTS HERE!
         //#####
 
+        // UI Text Color
+        TEXT_EFFECT( 64, 64, 64 ) {
+
+            override_text_color( rgb( 255, 255, 255 ) );
+
+        }
+
+        // Armor Bar
+        TEXT_EFFECT( 51, 22, 6 ) {
+
+            apply_horizontal_shift( 22 );
+            apply_vertical_shift( -82 );
+
+        }
+
         // Golden Color
-        TEXT_EFFECT(76,64,24){
-            apply_stupid_noah_gold();
-            apply_outline(rgb(120,68,0));
+        TEXT_EFFECT(76,64,24) {
+
+            apply_gold();
+            apply_outline( rgb(120,68,0) );
+
         }
     
         return true; 
