@@ -388,6 +388,20 @@
     ],
     "replace": true,
     "subtitle": "subtitles.weather.rain"
+  },
+  "event.mob_effect.bad_omen": {
+
+  	"replace":true,
+	"sounds":[{"name":"empty"}]
+
+  },
+  "bad_omen": {
+
+  	"sounds": [
+      "event/mob_effects/bad_omen"
+    ],
+    "subtitle": "subtitles.event.mob_effect.bad_omen"
+
   }
 
 }

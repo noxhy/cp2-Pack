@@ -12,17 +12,37 @@ struct TextData {
     vec2 uvMin;
     vec2 uvMax;
     vec2 uvCenter;
+    vec2 offset;
     bool isShadow;
     bool doTextureLookup;
     bool shouldScale;
+    bool stupidWorkaround;
 };
 
 TextData textData;
+float GameTimeSeconds = GameTime * 1200.;
 
 bool uvBoundsCheck(vec2 uv, vec2 uvMin, vec2 uvMax) {
     if(isnan(uv.x) || isnan(uv.y)) return true;
     const float error = 0.0001;
     return uv.x < textData.uvMin.x + error || uv.y < textData.uvMin.y + error || uv.x > textData.uvMax.x - error || uv.y > textData.uvMax.y - error;
+}
+
+int guiScale(mat4 ProjMat, vec2 ScreenSize) {
+    return int(round(ScreenSize.x * ProjMat[0][0] / 2));
+}
+
+float getFOV(mat4 ProjMat) {
+    return atan(1.0, ProjMat[1][1]) * 114.591559;
+}
+
+vec2 getCenter(sampler2D sampler, int id) {
+    vec2 shift = textureSize(sampler, 0)/2.;
+
+    shift.x *= ((id >> 1) - 0.5) * -2;
+    shift.y *= (((id+1) >> 1 & 1) - 0.5 ) * 2;
+
+    return shift;
 }
 
 vec3 textSdf() {
@@ -242,7 +262,7 @@ void apply_chromatic_abberation() {
     textData.shouldScale = true;
     float noiseX = noise(GameTime * 12000.0) - 0.5;
     float noiseY = noise(GameTime * 12000.0 + 19732.134) - 0.5;
-    vec2 offset = vec2(0.5 / 256, 0.0) + vec2(0.5, 1.0) *4* vec2(noiseX, noiseY) / 256;
+    vec2 offset = vec2(0.5 / 256, 0.0) + vec2(0.5, 1.0) * 4 * vec2(noiseX, noiseY) / 256;
 
     vec2 uv = textData.uv + offset;
     vec4 s1 = texture(Sampler0, uv);
@@ -444,14 +464,24 @@ void apply_non_binary_pride() {
 }
 
 void apply_gold() {
-    textData.color.rgb = hsvToRgb( vec3( ( 0.11 + ( sin( ( ( GameTime * 1200 + ( textData.position.x / 1000. ) * -25 ) / 2.5 ) * 12.5 ) ) * 0.02 ) , 0.57, 1. ) );
+    textData.color.rgb = hsvToRgb( vec3( ( 0.11 + ( sin( ( ( GameTimeSeconds * 1.2 + ( textData.position.x / 1000. ) * -25 ) / 2.5 ) * 12.5 ) ) * 0.02 ) , 0.57, 1. ) );
+}
+
+void apply_armor() {
+    textData.color.rgb = hsvToRgb( vec3( ( sin( GameTimeSeconds * -2.5 + textData.position.x * 30. ) -15. ) / 36., 0.73, 0.80 ) );
+}
+
+void apply_health() {
+    textData.color.rgb = hsvToRgb( vec3( ( sin( GameTimeSeconds * -2.5 + textData.position.x * 30. ) -0.5 )/ 36., 0.73, 0.80 ) );
 }
 
 #define TEXT_EFFECT(r, g, b) return true; case ((uint(r/4) << 16) | (uint(g/4) << 8) | (uint(b/4))):
 
 bool applyTextEffects() { 
     uint vertexColorId = colorId(floor(round(textData.color.rgb * 255.0) / 4.0) / 255.0); 
-    if(textData.isShadow) { vertexColorId = colorId(textData.color.rgb);} 
+    if(textData.isShadow) { vertexColorId = colorId(textData.color.rgb);}
+    textData.offset = vec2(0, 0);
+    textData.stupidWorkaround = false;
     switch(vertexColorId >> 8) { 
         case 0xFFFFFFFFu:
 
@@ -460,27 +490,175 @@ bool applyTextEffects() {
         //#####
 
         // UI Text Color
-        TEXT_EFFECT( 64, 64, 64 ) {
+        TEXT_EFFECT( 64, 64, 64 )
+        {
 
             override_text_color( rgb( 255, 255, 255 ) );
 
         }
 
-        // Armor Bar
-        TEXT_EFFECT( 51, 22, 6 ) {
 
-            apply_horizontal_shift( 22 );
-            apply_vertical_shift( -82 );
+        // Health Bar
+        TEXT_EFFECT( 77, 102, 24 )
+        {
+
+            textData.offset = vec2( -182, -82 );
+            apply_health();
+            remove_text_shadow();
 
         }
+
+
+        // Health Bar Background
+        TEXT_EFFECT( 77, 102, 22 )
+        {
+
+            textData.offset = vec2( -182, -82 );
+            override_text_color( rgb( 255, 255 ,255 ) );
+            remove_text_shadow();
+
+        }
+
+        // Health Bar Numbers
+        TEXT_EFFECT( 77, 102, 28 )
+        {
+
+            textData.offset = vec2( -134, -78 );
+            override_text_color( vec4( 1., 0.9, 0.9, 0.65 ) );
+            remove_text_shadow(); 
+
+        }
+
+        // Armor Bar
+        TEXT_EFFECT( 51, 22, 6 )
+        {
+
+            textData.offset = vec2( 22, -82 );
+            apply_armor();
+            remove_text_shadow();
+
+        }
+
+        // Armor Bar Background
+        TEXT_EFFECT( 51, 22, 8 )
+        {
+
+            textData.offset = vec2( 22, -82 );
+            override_text_color( rgb( 255, 255 ,255 ) );
+            remove_text_shadow();
+
+        }
+
+
+        // Armor Bar Numbers
+        TEXT_EFFECT( 51, 22, 12 )
+        {
+
+            textData.offset = vec2( 70, -78 );
+            override_text_color( vec4( 0.9, 0.9, 1., 0.65 ) );
+            remove_text_shadow();
+
+        }
+
 
         // Golden Color
-        TEXT_EFFECT(76,64,24) {
+        TEXT_EFFECT( 76, 64, 24 )
+        {
 
             apply_gold();
-            apply_outline( rgb(120,68,0) );
+            apply_outline( rgb( 120, 68, 0 ) );
+            apply_iterating_movement();
 
         }
+
+
+        // Ammo Numbers
+        TEXT_EFFECT( 230, 211, 255 )
+        {
+
+            textData.offset.x = 46.;
+            override_text_color( vec4( 1., 1., 1., 0.8 ) );
+            remove_text_shadow();
+            textData.stupidWorkaround = true;
+            apply_iterating_movement();
+
+        }
+
+
+        // Crosshair Icons
+        TEXT_EFFECT( 51, 4, 51 )
+        {
+
+            remove_text_shadow();
+            override_text_color( rgb( 255, 255, 255 ) );
+            textData.offset.y = 33;
+
+        }
+
+
+        // Timer
+        TEXT_EFFECT( 51, 31,  42 )
+        {
+
+            override_text_color( rgb( 255, 255, 255 ) );
+            remove_text_shadow();
+
+        }
+
+
+        // Timer Background
+        TEXT_EFFECT( 51, 43, 30 )
+        {
+
+            override_text_color( vec4( 0., 0., 0., 0.4 ) );
+            remove_text_shadow();
+
+        }
+
+
+        // Kill Cards
+        TEXT_EFFECT( 112, 94, 48 )
+        {
+
+            remove_text_shadow();
+            override_text_color( rgb( 255, 255, 255 ) );
+            textData.offset.x = -18.;
+            apply_shimmer(1.0, 0.35, rgb(255,255,255));
+
+        }
+
+        // CT Score Number
+        TEXT_EFFECT( 48, 35, 51 )
+        {
+
+            textData.offset = vec2( -9. - 8., 14. );
+            override_text_color( vec4( 0.15, 0.87, 0.51, 1. ) );
+            apply_outline( vec3( 0.15, 0.87, 0.51 ) * 0.25 );
+            apply_shimmer(0.5, 0.25, rgb(255,255,255));
+
+        }
+
+        // T Score Number
+        TEXT_EFFECT( 51, 35, 42 )
+        {
+
+            textData.offset = vec2( 7. + 8., 14. );
+            override_text_color( vec4( 0.92, 0.3, 0.4, 1. ) );
+            apply_outline( vec3( 0.92, 0.3, 0.4 ) * 0.25 );
+            apply_shimmer(0.5, 0.25, rgb(255,255,255));
+
+        }
+
+        // Scope Characters
+        TEXT_EFFECT( 51, 51, 51 )
+        {
+
+            textData.offset = vec2( 7., 7. );
+            remove_text_shadow();
+            override_text_color( rgb( 255, 255, 255 ) );
+
+        }
+
     
         return true; 
     } 
@@ -589,6 +767,8 @@ out vec3 vctfx_uvpos4;
 bool applySpheyaPack9() {
     gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
 
+    int gui_scale = guiScale( ProjMat, ScreenSize );
+
     vctfx_isShadow = fract(Position.z) < 0.01 ? 1.0 : 0.0;
     vctfx_applyTextEffect = 1.0;
     vctfx_changedScale = 0.0;
@@ -615,6 +795,17 @@ bool applySpheyaPack9() {
 
     vec2 corner = vec2[](vec2(-1.0, +1.0), vec2(-1.0, -1.0), vec2(+1.0, -1.0), vec2(+1.0, +1.0))[gl_VertexID % 4];
 
+    gl_Position.x += ( gui_scale * textData.offset.x ) / ScreenSize.x;
+    gl_Position.y += ( gui_scale * textData.offset.y ) / ScreenSize.y;
+
+    if(textData.stupidWorkaround) {
+
+        vec2 center = getCenter( Sampler2, gl_VertexID % 4 );
+        center.y /= ScreenSize.y / gui_scale * 1.;
+        gl_Position.y = 0.-center.y-( gui_scale * 46.5 ) / ScreenSize.y;
+
+    }
+
     if(textureSize(Sampler0, 0) != ivec2(256, 256)) {
         vctfx_applyTextEffect = 0.0;
         return false;
@@ -631,6 +822,7 @@ bool applySpheyaPack9() {
         gl_Position.xy += corner * 0.2;
         vctfx_changedScale = 1.0;
     }
+    
 
     vctfx_screenPos = gl_Position;
     vertexDistance = length((ModelViewMat * vec4(Position, 1.0)).xyz);
