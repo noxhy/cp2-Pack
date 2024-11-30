@@ -2,6 +2,8 @@
 #define VSH
 #define RENDERTYPE_TEXT
 
+#moj_import <minecraft:fog.glsl>
+
 // These are inputs and outputs to the shader
 // If you are merging with a shader, put any inputs and outputs that they have, but are not here already, in the list below
 in vec3 Position;
