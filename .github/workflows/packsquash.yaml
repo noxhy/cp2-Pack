@@ -25,6 +25,9 @@ jobs:
             # Obfuscate and optimize resourcepack as much as possible.
             zip_spec_conformance_level = 'disregard'
 
+            ['**/*?.{fsh,vsh,glsl}']
+            shader_source_transformation_strategy = 'keep_as_is'
+
             # Include LICENSE
             ['**/{LICENSE}']
             force_include = true
