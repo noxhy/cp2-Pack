@@ -35,13 +35,15 @@ void main(){
     if (isColor(fragColor, WHITE)) {fragColor.a = 0.2;}
 
     if (isColor(fragColor, FLASH)) {fragColor.rgb = vec3(1.,1.,1.);}
-    if (isColor(fragColor, VEIL)) {
+    if (isColor(fragColor, VEIL))
+    {
 
             float trans = length((vec2(gl_FragCoord.x - ScreenSize.x / 2, gl_FragCoord.y - ScreenSize.y / 2)) / ScreenSize.x)/6;
             trans += 0.1;
 
             fragColor.rgba = vec4(0.137,0.35,0.91,trans);
-        }
+    }
+    
     // DO NOT UNCOMMENT ITS THE SEIZURE ANTI F1
     // if (isColor(fragColor, FLASH)) {fragColor.rgb *= mod(Time*1000, 2);}
 
