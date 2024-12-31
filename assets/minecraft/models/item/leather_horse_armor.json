@@ -25,7 +25,9 @@
   {"predicate": {"custom_model_data":16}, "model": "item/guns/cataclysm/royal_cataclysm"},
   {"predicate": {"custom_model_data":17}, "model": "item/guns/legacy/royal_legacy"},
   {"predicate": {"custom_model_data":18}, "model": "item/guns/phantom/phantom_bloodbath"},
-  {"predicate": {"custom_model_data":19}, "model": "item/guns/desolation/hunting_rifle"}
+  {"predicate": {"custom_model_data":19}, "model": "item/guns/desolation/hunting_rifle"},
+
+  {"predicate": {"custom_model_data":20}, "model": "item/guns/rocket_launcher"}
 
   ]
  }

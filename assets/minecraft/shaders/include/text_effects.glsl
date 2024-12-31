@@ -580,7 +580,6 @@ bool applyTextEffects() {
             override_text_color( vec4( 1., 1., 1., 0.8 ) );
             remove_text_shadow();
             textData.stupidWorkaround = true;
-            apply_iterating_movement();
 
         }
 
