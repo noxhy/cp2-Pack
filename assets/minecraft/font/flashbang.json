@@ -2,7 +2,8 @@
     "providers":
     [
 
-        {"type": "bitmap", "file": "font/flashbang.png", "ascent": 256, "height": 512, "chars": ["a"]}
+        {"type": "bitmap", "file": "font/flashbang.png", "ascent": 256, "height": 512, "chars": ["a"]},
+        {"type": "bitmap", "file": "font/translucent.png", "ascent": 256, "height": 512, "chars": ["b"]}
 
     ]
 

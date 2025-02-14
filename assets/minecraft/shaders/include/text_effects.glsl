@@ -540,7 +540,7 @@ bool applyTextEffects() {
         }
 
         // Armor Bar Background
-        TEXT_EFFECT( 51, 22, 8 )
+        TEXT_EFFECT( 51, 22, 10 )
         {
 
             textData.offset = vec2( 22, -82 );
@@ -578,7 +578,6 @@ bool applyTextEffects() {
 
             textData.offset.x = 46.;
             override_text_color( vec4( 1., 1., 1., 0.8 ) );
-            remove_text_shadow();
             textData.stupidWorkaround = true;
 
         }
@@ -655,6 +654,26 @@ bool applyTextEffects() {
             textData.offset = vec2( 7., 7. );
             remove_text_shadow();
             override_text_color( rgb( 255, 255, 255 ) );
+
+        }
+
+
+        // Swap Characters
+        TEXT_EFFECT( 51, 51, 56 )
+        {
+
+            apply_gradient(rgb(198, 173, 255), rgb(162, 109, 255));
+            apply_outline(vec3(0.63, 0.42, 1.0) * 0.25);
+
+        }
+
+        // Swap Characters Cooler
+        TEXT_EFFECT( 51, 51, 60 )
+        {
+
+            apply_flipping_movement(1.0, 1.0, 1.0 / 256.0);
+            apply_gradient(rgb(198, 173, 255), rgb(162, 109, 255));
+            apply_outline(vec3(0.63, 0.42, 1.0) * 0.25);
 
         }
 
