@@ -2,12 +2,15 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "item/filled_slot"
+		"1": "gui/case_preview",
+		"layer0": "item/filled_slot",
+		"particle": "gui/case_preview"
 	},
 	"gui_light": "front",
 	"display": {
 		"gui": {
-			"scale": [1.1, 1.1, 1.1]
+			"translation": [7, -7, 0],
+			"scale": [2, 2, 2]
 		}
 	}
 }
