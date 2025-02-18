@@ -27,7 +27,8 @@
   {"predicate": {"custom_model_data":18}, "model": "item/guns/phantom/phantom_bloodbath"},
   {"predicate": {"custom_model_data":19}, "model": "item/guns/desolation/hunting_rifle"},
 
-  {"predicate": {"custom_model_data":20}, "model": "item/guns/inertia/wrenlow_inertia"}
+  {"predicate": {"custom_model_data":20}, "model": "item/guns/inertia/wrenlow_inertia"},
+  {"predicate": {"custom_model_data":21}, "model": "item/guns/ravager/scar"}
 
   ]
  }
