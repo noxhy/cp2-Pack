@@ -1,7 +1,7 @@
 {
     "providers":
     [
-        {"type": "bitmap", "file": "gui/case_preview.png", "ascent": 13, "height": 256, "chars": ["a"]}
+        {"type": "bitmap", "file": "gui/case_preview.png", "ascent": 13, "height": 256, "chars": ["abc"]}
     ]
 
 }
