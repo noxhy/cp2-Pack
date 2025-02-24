@@ -28,7 +28,11 @@
   {"predicate": {"custom_model_data":19}, "model": "item/guns/desolation/hunting_rifle"},
 
   {"predicate": {"custom_model_data":20}, "model": "item/guns/inertia/wrenlow_inertia"},
-  {"predicate": {"custom_model_data":21}, "model": "item/guns/ravager/scar"}
+  {"predicate": {"custom_model_data":21}, "model": "item/guns/ravager/scar"},
+  {"predicate": {"custom_model_data":22}, "model": "item/guns/valkyrie/cardboard"},
+  {"predicate": {"custom_model_data":23}, "model": "item/guns/valkyrie/wrenlow"},
+  {"predicate": {"custom_model_data":24}, "model": "item/guns/valkyrie/handofgod"},
+  {"predicate": {"custom_model_data":25}, "model": "item/guns/cataclysm/wrenlow"}
 
   ]
  }
