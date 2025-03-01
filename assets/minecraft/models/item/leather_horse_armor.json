@@ -32,7 +32,8 @@
   {"predicate": {"custom_model_data":22}, "model": "item/guns/valkyrie/cardboard"},
   {"predicate": {"custom_model_data":23}, "model": "item/guns/valkyrie/wrenlow"},
   {"predicate": {"custom_model_data":24}, "model": "item/guns/valkyrie/handofgod"},
-  {"predicate": {"custom_model_data":25}, "model": "item/guns/cataclysm/wrenlow"}
+  {"predicate": {"custom_model_data":25}, "model": "item/guns/cataclysm/wrenlow"},
+  {"predicate": {"custom_model_data":26}, "model": "item/guns/warden/miku"}
 
   ]
  }
