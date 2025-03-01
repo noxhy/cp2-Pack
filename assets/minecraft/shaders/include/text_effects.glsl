@@ -565,9 +565,9 @@ bool applyTextEffects() {
         TEXT_EFFECT( 76, 64, 24 )
         {
 
+            apply_iterating_movement();
             apply_gold();
             apply_outline( rgb( 120, 68, 0 ) );
-            apply_iterating_movement();
 
         }
 
