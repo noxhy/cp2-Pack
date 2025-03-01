@@ -677,6 +677,39 @@ bool applyTextEffects() {
 
         }
 
+
+        // Sticker Shimmer
+        TEXT_EFFECT( 51, 31, 64 )
+        {
+
+            apply_shimmer();
+            apply_gradient(rgb(198, 173, 255), rgb(162, 109, 255));
+            apply_outline(vec3(0.63, 0.42, 1.0) * 0.25);
+
+        }
+
+
+        // Sticker Shimmer
+        TEXT_EFFECT( 51, 31, 68 )
+        {
+
+            apply_iterating_movement();
+            apply_gradient(rgb(175, 180, 255), rgb(84, 93, 255));
+            apply_outline(vec3(0.33, 0.36, 1.0) * 0.25);
+
+        }
+
+
+        // Sticker Shimmer
+        TEXT_EFFECT( 51, 31, 72 )
+        {
+
+            apply_flipping_movement(1.0, 1.0, 1.0 / 256.0);
+            apply_gradient(rgb(255, 181, 192), rgb(255, 76, 103));
+            apply_outline(vec3(1.0, 0.3, 0.4) * 0.25);
+
+        }
+
     
         return true; 
     } 
