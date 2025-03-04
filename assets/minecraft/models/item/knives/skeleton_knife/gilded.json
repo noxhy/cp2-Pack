@@ -1,5 +1,5 @@
 {
-	"parent": "item/knives/skeleton_knife/skeleton_knife",
+	"parent": "item/knives/skeleton_knife/base",
 	"texture_size": [16, 16],
 	"textures": {
 		"0": "item/knives/skeleton_knife/gilded",
