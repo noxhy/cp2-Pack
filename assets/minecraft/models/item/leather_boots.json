@@ -7,8 +7,13 @@
   "overrides": [
 
   {"predicate": {"custom_model_data":1}, "model": "item/knives/knife"},
-  {"predicate": {"custom_model_data":2}, "model": "item/knives/crescent_blade"},
-  {"predicate": {"custom_model_data":3}, "model": "item/knives/skeleton_knife"},
+  {"predicate": {"custom_model_data":2}, "model": "item/knives/crescent_blade/crescent_blade"},
+  {"predicate": {"custom_model_data":3}, "model": "item/knives/skeleton_knife/skeleton_knife"},
+  {"predicate": {"custom_model_data":4}, "model": "item/knives/skeleton_knife/gilded"},
+  {"predicate": {"custom_model_data":5}, "model": "item/knives/skeleton_knife/magma"},
+  {"predicate": {"custom_model_data":6}, "model": "item/knives/skeleton_knife/crystal"},
+  {"predicate": {"custom_model_data":7}, "model": "item/knives/skeleton_knife/blooming"},
+  {"predicate": {"custom_model_data":8}, "model": "item/knives/skeleton_knife/seaspray"},
   {"predicate": {"custom_model_data":10}, "model": "item/knives/knifeageddon"}
 
   ]

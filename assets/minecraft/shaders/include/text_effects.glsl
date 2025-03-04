@@ -689,7 +689,7 @@ bool applyTextEffects() {
         }
 
 
-        // Sticker Shimmer
+        // Sticker Jumping
         TEXT_EFFECT( 51, 31, 68 )
         {
 
@@ -700,7 +700,7 @@ bool applyTextEffects() {
         }
 
 
-        // Sticker Shimmer
+        // Sticker Flipping
         TEXT_EFFECT( 51, 31, 72 )
         {
 

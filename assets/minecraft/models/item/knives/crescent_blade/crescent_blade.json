@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "item/knives/crescent_blade",
-		"particle": "item/knives/crescent_blade"
+		"0": "item/knives/crescent_blade/crescent_blade",
+		"particle": "item/knives/crescent_blade/crescent_blade"
 	},
 	"elements": [
 		{
