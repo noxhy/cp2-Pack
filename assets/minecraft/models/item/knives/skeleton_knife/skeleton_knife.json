@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "item/knives/skeleton_knife",
-		"particle": "item/knives/skeleton_knife"
+		"0": "item/knives/skeleton_knife/skeleton_knife",
+		"particle": "item/knives/skeleton_knife/skeleton_knife"
 	},
 	"elements": [
 		{
