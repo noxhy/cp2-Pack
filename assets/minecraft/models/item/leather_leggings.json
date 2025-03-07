@@ -24,7 +24,9 @@
   {"predicate": {"custom_model_data":15}, "model": "item/guns/optimism/finger_gun"},
   {"predicate": {"custom_model_data":16}, "model": "item/guns/deadlock/pheonix_blaster"},
   {"predicate": {"custom_model_data":17}, "model": "item/guns/deadlock/ultrakill"},
-  {"predicate": {"custom_model_data":18}, "model": "item/guns/zedrick/bugged"}
+  {"predicate": {"custom_model_data":18}, "model": "item/guns/zedrick/bugged"},
+  {"predicate": {"custom_model_data":19}, "model": "item/guns/chucky/shotgun_of_hate"}
+
 
   ]
  }

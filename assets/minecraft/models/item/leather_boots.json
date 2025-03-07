@@ -14,6 +14,7 @@
   {"predicate": {"custom_model_data":6}, "model": "item/knives/skeleton_knife/crystal"},
   {"predicate": {"custom_model_data":7}, "model": "item/knives/skeleton_knife/blooming"},
   {"predicate": {"custom_model_data":8}, "model": "item/knives/skeleton_knife/seaspray"},
+  {"predicate": {"custom_model_data":9}, "model": "item/knives/blue_gem_knife"},
   {"predicate": {"custom_model_data":10}, "model": "item/knives/knifeageddon"}
 
   ]
