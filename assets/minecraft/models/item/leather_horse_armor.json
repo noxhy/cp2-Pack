@@ -1,194 +1,39 @@
 {
-    "model": {
-        "type": "range_dispatch",
-        "property": "custom_model_data",
-        "fallback": {
-            "type": "model",
-            "model": "minecraft:item/leather_horse_armor"
-        },
-        "entries": [
-            {
-                "threshold": 1,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/ravager/ravager"
-                }
-            },
-            {
-                "threshold": 2,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/valkyrie/valkyrie"
-                }
-            },
-            {
-                "threshold": 3,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/warden/warden"
-                }
-            },
-            {
-                "threshold": 4,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/inertia/inertia"
-                }
-            },
-            {
-                "threshold": 5,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/legacy/legacy"
-                }
-            },
-            {
-                "threshold": 6,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/phantom/phantom"
-                }
-            },
-            {
-                "threshold": 7,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/desolation/desolation"
-                }
-            },
-            {
-                "threshold": 8,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/desolation/desolation"
-                }
-            },
-            {
-                "threshold": 9,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/vision/vision"
-                }
-            },
-            {
-                "threshold": 10,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/cataclysm/cataclysm"
-                }
-            },
-            {
-                "threshold": 11,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/apparition/pixlii_apparition"
-                }
-            },
-            {
-                "threshold": 12,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/apparition/apparition"
-                }
-            },
-            {
-                "threshold": 13,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/vision/pixlii_vision"
-                }
-            },
-            {
-                "threshold": 14,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/desolation/royal_desolation"
-                }
-            },
-            {
-                "threshold": 15,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/vision/royal_vision"
-                }
-            },
-            {
-                "threshold": 16,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/cataclysm/royal_cataclysm"
-                }
-            },
-            {
-                "threshold": 17,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/legacy/royal_legacy"
-                }
-            },
-            {
-                "threshold": 18,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/phantom/phantom_bloodbath"
-                }
-            },
-            {
-                "threshold": 19,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/desolation/hunting_rifle"
-                }
-            },
-            {
-                "threshold": 20,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/inertia/wrenlow_inertia"
-                }
-            },
-            {
-                "threshold": 21,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/ravager/scar"
-                }
-            },
-            {
-                "threshold": 22,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/valkyrie/cardboard"
-                }
-            },
-            {
-                "threshold": 23,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/valkyrie/wrenlow"
-                }
-            },
-            {
-                "threshold": 24,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/valkyrie/handofgod"
-                }
-            },
-            {
-                "threshold": 25,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/cataclysm/wrenlow"
-                }
-            },
-            {
-                "threshold": 26,
-                "model": {
-                    "type": "model",
-                    "model": "item/guns/warden/miku"
-                }
-            }
-        ]
-    }
-}
+  "parent": "item/generated",
+  "textures": {
+  "layer0": "item/leather_horse_armor"
+  },
+
+  "overrides": [
+
+  {"predicate": {"custom_model_data":1}, "model": "item/guns/ravager/ravager"},
+  {"predicate": {"custom_model_data":2}, "model": "item/guns/valkyrie/valkyrie"},
+  {"predicate": {"custom_model_data":3}, "model": "item/guns/warden/warden"},
+  {"predicate": {"custom_model_data":4}, "model": "item/guns/inertia/inertia"},
+  {"predicate": {"custom_model_data":5}, "model": "item/guns/legacy/legacy"},
+  {"predicate": {"custom_model_data":6}, "model": "item/guns/phantom/phantom"},
+  {"predicate": {"custom_model_data":7}, "model": "item/guns/desolation/desolation"},
+  {"predicate": {"custom_model_data":8}, "model": "item/guns/desolation/desolation"},
+  {"predicate": {"custom_model_data":9}, "model": "item/guns/vision/vision"},
+  {"predicate": {"custom_model_data":10}, "model": "item/guns/cataclysm/cataclysm"},
+  {"predicate": {"custom_model_data":11}, "model": "item/guns/apparition/pixlii_apparition"},
+
+  {"predicate": {"custom_model_data":12}, "model": "item/guns/apparition/apparition"},
+  {"predicate": {"custom_model_data":13}, "model": "item/guns/vision/pixlii_vision"},
+  {"predicate": {"custom_model_data":14}, "model": "item/guns/desolation/royal_desolation"},
+  {"predicate": {"custom_model_data":15}, "model": "item/guns/vision/royal_vision"},
+  {"predicate": {"custom_model_data":16}, "model": "item/guns/cataclysm/royal_cataclysm"},
+  {"predicate": {"custom_model_data":17}, "model": "item/guns/legacy/royal_legacy"},
+  {"predicate": {"custom_model_data":18}, "model": "item/guns/phantom/phantom_bloodbath"},
+  {"predicate": {"custom_model_data":19}, "model": "item/guns/desolation/hunting_rifle"},
+
+  {"predicate": {"custom_model_data":20}, "model": "item/guns/inertia/wrenlow_inertia"},
+  {"predicate": {"custom_model_data":21}, "model": "item/guns/ravager/scar"},
+  {"predicate": {"custom_model_data":22}, "model": "item/guns/valkyrie/cardboard"},
+  {"predicate": {"custom_model_data":23}, "model": "item/guns/valkyrie/wrenlow"},
+  {"predicate": {"custom_model_data":24}, "model": "item/guns/valkyrie/handofgod"},
+  {"predicate": {"custom_model_data":25}, "model": "item/guns/cataclysm/wrenlow"},
+  {"predicate": {"custom_model_data":26}, "model": "item/guns/warden/miku"}
+
+  ]
+ }

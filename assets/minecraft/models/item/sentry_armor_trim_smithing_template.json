@@ -1,19 +1,12 @@
 {
-    "model": {
-        "type": "range_dispatch",
-        "property": "custom_model_data",
-        "fallback": {
-            "type": "model",
-            "model": "item/sentry_armor_trim_smithing_template"
-        },
-        "entries": [
-            {
-                "threshold": 1,
-                "model": {
-                    "type": "model",
-                    "model": "item/bomb/bomb"
-                }
-            }
-        ]
-    }
-}
+  "parent": "item/generated",
+  "textures": {
+  "layer0": "item/sentry_armor_trim_smithing_template"
+  },
+
+  "overrides": [
+
+  {"predicate": {"custom_model_data":1}, "model": "item/bomb/bomb"}
+  
+  ]
+ }

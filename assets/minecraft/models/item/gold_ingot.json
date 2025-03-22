@@ -1,54 +1,20 @@
 {
-    "model": {
-        "type": "range_dispatch",
-        "property": "custom_model_data",
-        "fallback": {
-            "type": "model",
-            "model": "minecraft:item/gold_ingot"
-        },
-        "entries": [
-            {
-                "threshold": 1,
-                "model": {
-                    "type": "model",
-                    "model": "item/crates/weapon_crate"
-                }
-            },
-            {
-                "threshold": 2,
-                "model": {
-                    "type": "model",
-                    "model": "item/crates/weapon_crate_open"
-                }
-            },
-            {
-                "threshold": 3,
-                "model": {
-                    "type": "model",
-                    "model": "item/crates/weapon_crate_big"
-                }
-            },
-            {
-                "threshold": 4,
-                "model": {
-                    "type": "model",
-                    "model": "item/crates/sticker_capsule"
-                }
-            },
-            {
-                "threshold": 5,
-                "model": {
-                    "type": "model",
-                    "model": "item/crates/sticker_capsule_open"
-                }
-            },
-            {
-                "threshold": 6,
-                "model": {
-                    "type": "model",
-                    "model": "item/crates/sticker_capsule_big"
-                }
-            }
-        ]
-    }
+  "parent": "item/generated",
+  "textures": {
+  "layer0": "item/gold_ingot"
+  },
+
+  "overrides": [
+
+    {"predicate": {"custom_model_data":1}, "model": "item/crates/weapon_crate"},
+    {"predicate": {"custom_model_data":2}, "model": "item/crates/weapon_crate_open"},
+    {"predicate": {"custom_model_data":3}, "model": "item/crates/weapon_crate_big"},
+    {"predicate": {"custom_model_data":4}, "model": "item/crates/sticker_capsule"},
+    {"predicate": {"custom_model_data":5}, "model": "item/crates/sticker_capsule_open"},
+    {"predicate": {"custom_model_data":6}, "model": "item/crates/sticker_capsule_big"}
+
+
+
+  ]
+
 }
