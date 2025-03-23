@@ -4,5 +4,8 @@
     "layer0": "minecraft:item/gui/guihead"
   },
 	"overrides": [
+
+    {"predicate": {"custom_model_data":1}, "model": "item/gui/big_head"}
+
 	]
 }
