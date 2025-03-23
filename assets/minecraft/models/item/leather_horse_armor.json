@@ -34,7 +34,8 @@
   {"predicate": {"custom_model_data":24}, "model": "item/guns/valkyrie/handofgod"},
   {"predicate": {"custom_model_data":25}, "model": "item/guns/cataclysm/wrenlow"},
   {"predicate": {"custom_model_data":26}, "model": "item/guns/warden/miku"},
-  {"predicate": {"custom_model_data":27}, "model": "item/guns/cataclysm/red_a"}
+  {"predicate": {"custom_model_data":27}, "model": "item/guns/cataclysm/red_a"},
+  {"predicate": {"custom_model_data":28}, "model": "item/guns/phantom/modern"}
 
   ]
  }

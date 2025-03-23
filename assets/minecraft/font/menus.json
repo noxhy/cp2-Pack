@@ -1,7 +1,9 @@
 {
     "providers":
     [
-        {"type": "bitmap", "file": "gui/case_preview.png", "ascent": 13, "height": 256, "chars": ["abc"]}
+        {"type": "bitmap", "file": "gui/case_preview.png", "ascent": 13, "height": 256, "chars": ["abc"]},
+        {"type": "bitmap", "file": "gui/inventory.png", "ascent": 13, "height": 256, "chars": ["d"]},
+        {"type": "bitmap", "file": "gui/profile.png", "ascent": 13, "height": 256, "chars": ["e"]}
     ]
 
 }
