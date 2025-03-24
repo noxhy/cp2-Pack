@@ -11,7 +11,9 @@
   {"predicate": {"custom_model_data":3}, "model": "item/bomb/bomb_2"},
 
   {"predicate": {"custom_model_data":4}, "model": "item/items/briefcase"},
-  {"predicate": {"custom_model_data":5}, "model": "item/items/briefcase_full"}
+  {"predicate": {"custom_model_data":5}, "model": "item/items/briefcase_2"},
+  {"predicate": {"custom_model_data":6}, "model": "item/items/briefcase_full"},
+  {"predicate": {"custom_model_data":7}, "model": "item/items/briefcase_full_2"}
 
   ]
 
