@@ -1,6 +1,7 @@
 #version 150
 #define FSH
 #define RENDERTYPE_TEXT
+#define SNIPER_CROSSHAIR_SIZE 1
 
 #moj_import <fog.glsl>
 
@@ -26,6 +27,7 @@ out vec4 fragColor;
 #moj_import <spheya_packs_impl.glsl>
 
 void main() {
+
     if((!((vertexColor.x * 255.0) == 240.0 && (vertexColor.y * 255.0) == 242.0 && (vertexColor.z * 255.0) == 242.0)) && applySpheyaPacks()) return;
     if((!((vertexColor.x * 255.0) == 168.0 && (vertexColor.y * 255.0) == 242.0 && (vertexColor.z * 255.0) == 242.0)) && applySpheyaPacks()) return;
     if((!((vertexColor.x * 255.0) == 164.0 && (vertexColor.y * 255.0) == 242.0 && (vertexColor.z * 255.0) == 242.0)) && applySpheyaPacks()) return;
@@ -39,5 +41,6 @@ void main() {
            discard;
         }
     }
+
     fragColor = linear_fog(color, vertexDistance, FogStart, FogEnd, FogColor);
 }

@@ -17,6 +17,7 @@ struct TextData {
     bool doTextureLookup;
     bool shouldScale;
     bool stupidWorkaround;
+    bool stretch;
 };
 
 TextData textData;
@@ -472,7 +473,7 @@ void apply_armor() {
 }
 
 void apply_health() {
-    textData.color.rgb = hsvToRgb( vec3( ( sin( GameTimeSeconds * -2.5 + textData.position.x * 30. ) -0.5 )/ 36., 0.73, 0.80 ) );
+    textData.color.rgb = hsvToRgb( vec3( ( sin( GameTimeSeconds * -2.5 + textData.position.x * 30. ) -0.5 ) / 64., 0.73, 0.80 ) );
 }
 
 #define TEXT_EFFECT(r, g, b) return true; case ((uint(r/4) << 16) | (uint(g/4) << 8) | (uint(b/4))):
@@ -482,6 +483,7 @@ bool applyTextEffects() {
     if(textData.isShadow) { vertexColorId = colorId(textData.color.rgb);}
     textData.offset = vec2(0, 0);
     textData.stupidWorkaround = false;
+    textData.stretch = false;
     switch(vertexColorId >> 8) { 
         case 0xFFFFFFFFu:
 
@@ -647,13 +649,24 @@ bool applyTextEffects() {
 
         }
 
-        // Scope Characters
+        // Scope Crosshair
         TEXT_EFFECT( 51, 51, 51 )
         {
 
-            textData.offset = vec2( 7., 7. );
+            textData.offset = vec2( 5.5, -5. );
             remove_text_shadow();
             override_text_color( rgb( 255, 255, 255 ) );
+            textData.stretch = true;
+
+        }
+
+        // Scope Background
+        TEXT_EFFECT( 51, 51, 75 )
+        {
+
+            remove_text_shadow();
+            override_text_color( rgb( 255, 255, 255 ) );
+            textData.stretch = true;
 
         }
 
@@ -816,6 +829,7 @@ out vec3 vctfx_uvpos3;
 out vec3 vctfx_uvpos4;
 
 bool applySpheyaPack9() {
+
     gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
 
     int gui_scale = guiScale( ProjMat, ScreenSize );
@@ -868,10 +882,27 @@ bool applySpheyaPack9() {
         case 1: vctfx_ipos2 = vec3(gl_Position.xy, 1.0); vctfx_uvpos2 = vec3(UV0.xy, 1.0); break;
         case 2: vctfx_ipos3 = vec3(gl_Position.xy, 1.0); vctfx_uvpos3 = vec3(UV0.xy, 1.0); break;
         case 3: vctfx_ipos4 = vec3(gl_Position.xy, 1.0); vctfx_uvpos4 = vec3(UV0.xy, 1.0); break;
-    } 
+    }
+
     if(textData.shouldScale) {
         gl_Position.xy += corner * 0.2;
         vctfx_changedScale = 1.0;
+    }
+
+    if(textData.stretch)
+    {
+
+        switch (gl_VertexID % 4)
+        {
+            case 0: gl_Position = vec4(-1.0, 1.0, -1.0, 1.0); break;
+            case 1: gl_Position = vec4(-1.0, -1.0, -1.0, 1.0); break;
+            case 2: gl_Position = vec4(1.0, -1.0, -1.0, 1.0); break;
+            case 3: gl_Position = vec4(1.0, 1.0, -1.0, 1.0); break;
+        }
+
+        gl_Position.x += ( gui_scale * textData.offset.x ) / ScreenSize.x;
+        gl_Position.y += ( gui_scale * textData.offset.y ) / ScreenSize.y;
+
     }
     
 

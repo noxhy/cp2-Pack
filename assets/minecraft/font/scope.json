@@ -2,8 +2,8 @@
     "providers":
     [
 
-        {"type": "bitmap", "file": "font/scope.png", "ascent": 85, "height": 180, "chars": ["a"]},
-        {"type": "bitmap", "file": "font/scope_inaccurate.png", "ascent": 85, "height": 180, "chars": ["b"]},
+        {"type": "bitmap", "file": "font/scope.png", "ascent": 85, "height": 143, "chars": ["a"]},
+        {"type": "bitmap", "file": "font/scope_inaccurate.png", "ascent": 85, "height": 143, "chars": ["b"]},
         {"type": "bitmap", "file": "font/scope_background.png", "ascent": 85, "height": 180, "chars": ["c"]}
 
     ]
