@@ -37,7 +37,8 @@
   {"predicate": {"custom_model_data":27}, "model": "item/guns/cataclysm/red_a"},
   {"predicate": {"custom_model_data":28}, "model": "item/guns/phantom/modern"},
   {"predicate": {"custom_model_data":29}, "model": "item/guns/apparition/silver"},
-  {"predicate": {"custom_model_data":30}, "model": "item/guns/legacy/legend"}
+  {"predicate": {"custom_model_data":30}, "model": "item/guns/legacy/legend"},
+  {"predicate": {"custom_model_data":31}, "model": "item/guns/ravager/future"}
 
   ]
  }
