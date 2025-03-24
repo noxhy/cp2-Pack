@@ -34,3 +34,20 @@
         {"predicate": {"charged": 1, "custom_model_data":1 },"model": "item/none"}
     ]
 }
+  "parent": "item/generated",
+  "textures": {
+  "layer0": "item/crossbow"
+  },
+
+  "overrides": [
+
+  {"predicate": {"custom_model_data":1}, "model": "item/empty_slot"},
+  {"predicate": {"custom_model_data":2}, "model": "item/bomb/bomb"},
+  {"predicate": {"custom_model_data":3}, "model": "item/bomb/bomb_2"},
+
+  {"predicate": {"custom_model_data":4}, "model": "item/items/briefcase"},
+  {"predicate": {"custom_model_data":5}, "model": "item/items/briefcase_full"}
+
+  ]
+
+ }
