@@ -9,6 +9,7 @@
   {"predicate": {"custom_model_data":1}, "model": "item/knives/knife"},
   {"predicate": {"custom_model_data":2}, "model": "item/knives/crescent_blade/crescent_blade"},
   {"predicate": {"custom_model_data":3}, "model": "item/knives/skeleton_knife/skeleton_knife"},
+
   {"predicate": {"custom_model_data":4}, "model": "item/knives/skeleton_knife/gilded"},
   {"predicate": {"custom_model_data":5}, "model": "item/knives/skeleton_knife/magma"},
   {"predicate": {"custom_model_data":6}, "model": "item/knives/skeleton_knife/crystal"},
@@ -17,6 +18,12 @@
 
   {"predicate": {"custom_model_data":9}, "model": "item/knives/leek/leek"},
   {"predicate": {"custom_model_data":10}, "model": "item/knives/leek/shiny"},
+  
+  {"predicate": {"custom_model_data":11}, "model": "item/knives/crescent_blade/spectral"},
+  {"predicate": {"custom_model_data":12}, "model": "item/knives/crescent_blade/magma"},
+  {"predicate": {"custom_model_data":13}, "model": "item/knives/crescent_blade/crystal"},
+  {"predicate": {"custom_model_data":14}, "model": "item/knives/crescent_blade/blooming"},
+  {"predicate": {"custom_model_data":15}, "model": "item/knives/crescent_blade/seaspray"},
 
   {"predicate": {"custom_model_data":666}, "model": "item/knives/knifeageddon"}
 
