@@ -653,7 +653,7 @@ bool applyTextEffects() {
         TEXT_EFFECT( 51, 51, 51 )
         {
 
-            // textData.offset = vec2( 7.5, -5. );
+            textData.offset = vec2( 7.5, -5. );
             remove_text_shadow();
             override_text_color( rgb( 255, 255, 255 ) );
             textData.stretch = true;
