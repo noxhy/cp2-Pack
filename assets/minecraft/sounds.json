@@ -328,6 +328,18 @@
 		{"name":"anthems/onebeer"}
 		]
 	},
+	"comp_cam.light_cheer":
+	{
+		"sounds":[
+		{"name":"comp_cam/light_cheer"}
+		]
+	},
+	"comp_cam.heavy_cheer":
+	{
+		"sounds":[
+		{"name":"comp_cam/heavy_cheer"}
+		]
+	},
 
 	"weather.rain": {
     "sounds": [
