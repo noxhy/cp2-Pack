@@ -1,0 +1,6 @@
+{
+  "parent": "item/knives/crescent_blade/crescent_blade",
+  "textures": {
+  "0": "item/knives/crescent_blade/seaspray"
+  }
+}

@@ -1,0 +1,9 @@
+{
+	"parent": "item/guns/desolation/desolation",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "item/guns/desolation/royal_desolation",
+		"particle": "item/guns/desolation/royal_desolation"
+	}
+
+}
