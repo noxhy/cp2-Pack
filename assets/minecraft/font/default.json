@@ -1,0 +1,11 @@
+{
+	"providers":[
+		{
+			"type": "bitmap",
+			"file": "jerma.png",
+			"ascent": 7,
+			"height": 10,
+			"chars": [""]
+		}
+	]
+}
