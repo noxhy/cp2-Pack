@@ -25,7 +25,7 @@ out vec2 texCoord0;
 out vec4 baseColor;
 out vec4 lightColor;
 
-#moj_import <minecraft:spheya_packs_impl.glsl>
+#moj_import <spheya_packs_impl.glsl>
 
 void main() {
     gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
