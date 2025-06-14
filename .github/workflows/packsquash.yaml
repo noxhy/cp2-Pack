@@ -38,7 +38,7 @@ jobs:
             force_include = true
 
             # Include temp
-            ['./temp/*']
+            ['temp/**']
             force_include = true
             
       - name: Tag and create release
