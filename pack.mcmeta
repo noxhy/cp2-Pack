@@ -1,7 +1,7 @@
 {
     "pack": {
-        "pack_format": 34,
-        "supported_formats": [ 34, 57 ],
+        "pack_format": 57,
+        "supported_formats": [ 57, 61, 71 ],
         "description": "by Noah, pixlii, Francidium, Floophead + endersaltz"
     },
 
@@ -10,6 +10,10 @@
             {
                 "formats": { "min_inclusive": 18, "max_inclusive": 2147483647 },
                 "directory": "overlay_18"
+            },
+            {
+                "formats": { "min_inclusive": 71, "max_inclusive": 71 },
+                "directory": "temp"
             }
         ]
     }
