@@ -37,8 +37,10 @@ jobs:
             ['**/{README.md}']
             force_include = true
 
-            # Include temp
-            ['temp/**']
+            # Include 1.21.1 and .5
+            ['1_21_1/**']
+            force_include = true
+            ['1_21_5/**']
             force_include = true
             
       - name: Tag and create release
