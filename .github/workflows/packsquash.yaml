@@ -35,6 +35,10 @@ jobs:
             # Include README
             ['**/{README.md}']
             force_include = true
+
+            # Include 1.21.5 fix
+            ['**/temp']
+            force_include = true
       - name: Tag and create release
         uses: softprops/action-gh-release@v2
         with:
