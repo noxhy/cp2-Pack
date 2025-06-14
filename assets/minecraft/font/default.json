@@ -2,7 +2,7 @@
 	"providers":[
 		{
 			"type": "bitmap",
-			"file": "jerma.png",
+			"file": "minecraft:font/jerma.png",
 			"ascent": 7,
 			"height": 10,
 			"chars": [""]
