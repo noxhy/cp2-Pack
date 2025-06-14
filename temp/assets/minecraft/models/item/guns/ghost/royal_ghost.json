@@ -1,0 +1,9 @@
+{
+	"parent": "item/guns/ghost/ghost",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "item/guns/ghost/royal_ghost",
+		"particle": "item/guns/ghost/royal_ghost"
+	}
+
+}

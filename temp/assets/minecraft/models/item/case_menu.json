@@ -1,0 +1,13 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "gui/buy_button"
+	},
+	"gui_light": "front",
+	"display": {
+		"gui": {
+			"scale": [2.0, 2.0, 2.0]
+		}
+	}
+}
