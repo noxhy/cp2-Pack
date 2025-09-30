@@ -1,9 +1,0 @@
-{
-	"parent": "item/guns/chucky/chucky",
-	"texture_size": [32, 32],
-	"textures": {
-		"0": "item/guns/chucky/silver",
-		"particle": "item/guns/chucky/silver"
-	}
-
-}

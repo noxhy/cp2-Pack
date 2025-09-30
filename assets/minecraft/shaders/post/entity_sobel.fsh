@@ -14,9 +14,9 @@
 #define DARK_PURPLE vec3(170., 0., 170.)
 #define WHITE vec3(255., 255., 255.)
 
+#moj_import <minecraft:globals.glsl>
+
 uniform sampler2D InSampler;
-uniform float Time;
-uniform vec2 ScreenSize;
 
 in vec2 texCoord;
 in vec2 oneTexel;
@@ -45,7 +45,7 @@ void main(){
     }
     
     // DO NOT UNCOMMENT ITS THE SEIZURE ANTI F1
-    // if (isColor(fragColor, FLASH)) {fragColor.rgb *= mod(Time*1000, 2);}
+    // if (isColor(fragColor, FLASH)) {fragColor.rgb *= mod(GameTime * 1000., 2);}
 
     if (isColor(fragColor,TEAM_CT) || isColor(fragColor,TEAM_T) || isColor(fragColor,TEAM_DM) || isColor(fragColor, GOLD) || isColor(fragColor, LIME) || isColor(fragColor, RED))
     {

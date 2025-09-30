@@ -1,22 +1,15 @@
 #version 150
 #define FSH
 #define RENDERTYPE_TEXT
-#define SNIPER_CROSSHAIR_SIZE 1
 
-#moj_import <fog.glsl>
+#moj_import <minecraft:fog.glsl>
+#moj_import <minecraft:dynamictransforms.glsl>
+#moj_import <minecraft:globals.glsl>
 
-// These are inputs and outputs to the shader
-// If you are merging with a shader, put any inputs and outputs that they have, but are not here already, in the list below
 uniform sampler2D Sampler0;
 
-uniform vec4 ColorModulator;
-uniform float FogStart;
-uniform float FogEnd;
-uniform vec4 FogColor;
-uniform float GameTime;
-uniform vec2 ScreenSize;
-
-in float vertexDistance;
+in float sphericalVertexDistance;
+in float cylindricalVertexDistance;
 in vec4 vertexColor;
 in vec2 texCoord0;
 in vec4 baseColor;
@@ -27,20 +20,18 @@ out vec4 fragColor;
 #moj_import <spheya_packs_impl.glsl>
 
 void main() {
-
-    if((!((vertexColor.x * 255.0) == 240.0 && (vertexColor.y * 255.0) == 242.0 && (vertexColor.z * 255.0) == 242.0)) && applySpheyaPacks()) return;
-    if((!((vertexColor.x * 255.0) == 168.0 && (vertexColor.y * 255.0) == 242.0 && (vertexColor.z * 255.0) == 242.0)) && applySpheyaPacks()) return;
-    if((!((vertexColor.x * 255.0) == 164.0 && (vertexColor.y * 255.0) == 242.0 && (vertexColor.z * 255.0) == 242.0)) && applySpheyaPacks()) return;
-
-    // Code below here is vanilla rendering, 
-    // If you are merging with another shader, replace the code below here with the code that they have in their main() function
+    if((!((vertexColor.x * 255.0) == 240.0 && (vertexColor.y * 255.0) == 242.0 && (vertexColor.z * 255.0) == 242.0)) && applySpheyaPacks())
+        return;
+    if((!((vertexColor.x * 255.0) == 168.0 && (vertexColor.y * 255.0) == 242.0 && (vertexColor.z * 255.0) == 242.0)) && applySpheyaPacks())
+        return;
+    if((!((vertexColor.x * 255.0) == 164.0 && (vertexColor.y * 255.0) == 242.0 && (vertexColor.z * 255.0) == 242.0)) && applySpheyaPacks())
+        return;
 
     vec4 color = texture(Sampler0, texCoord0) * vertexColor * ColorModulator;
-    if (color.a < 0.1) {
-        if (!(((vertexColor.x * 255.0) == 240.0 && (vertexColor.y * 255.0) == 242.0 && (vertexColor.z * 255.0) == 242.0) || ((vertexColor.x * 255.0) == 168.0 && (vertexColor.y * 255.0) == 242.0 && (vertexColor.z * 255.0) == 242.0) || ((vertexColor.x * 255.0) == 164.0 && (vertexColor.y * 255.0) == 242.0 && (vertexColor.z * 255.0) == 242.0))) {
-           discard;
+    if(color.a < 0.1) {
+        if(!(((vertexColor.x * 255.0) == 240.0 && (vertexColor.y * 255.0) == 242.0 && (vertexColor.z * 255.0) == 242.0) || ((vertexColor.x * 255.0) == 168.0 && (vertexColor.y * 255.0) == 242.0 && (vertexColor.z * 255.0) == 242.0) || ((vertexColor.x * 255.0) == 164.0 && (vertexColor.y * 255.0) == 242.0 && (vertexColor.z * 255.0) == 242.0))) {
+            discard;
         }
     }
-
-    fragColor = linear_fog(color, vertexDistance, FogStart, FogEnd, FogColor);
+    fragColor = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
 }

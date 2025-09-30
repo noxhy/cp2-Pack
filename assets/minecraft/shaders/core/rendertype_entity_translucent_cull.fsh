@@ -9,11 +9,11 @@ uniform float FogStart;
 uniform float FogEnd;
 uniform vec4 FogColor;
 
-in float vertexDistance;
+in float sphericalVertexDistance;
+in float cylindricalVertexDistance;
 in vec4 vertexColor;
 in vec2 texCoord0;
 in vec2 texCoord1;
-in vec4 normal;
 
 in float blueGem;
 in float blueGemOffset;

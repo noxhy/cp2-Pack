@@ -1,9 +1,0 @@
-{
-	"parent": "item/guns/vision/vision",
-	"texture_size": [32, 32],
-	"textures": {
-		"0": "item/guns/vision/royal_vision",
-		"particle": "item/guns/vision/royal_vision"
-	}
-
-}

@@ -1,5 +1,8 @@
 #version 150
 #if defined(RENDERTYPE_TEXT) || defined(RENDERTYPE_TEXT_INTENSITY)
+#moj_import <minecraft:globals.glsl>
+#moj_import <minecraft:fog.glsl>
+#moj_import <minecraft:dynamictransforms.glsl>
 
 struct TextData {
     vec4 color;
@@ -807,7 +810,7 @@ bool applySpheyaPack9() {
         discard;
     }
 
-    fragColor = linear_fog(fragColor, vertexDistance, FogStart, FogEnd, FogColor);
+    fragColor = apply_fog(fragColor, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
     return true;
 }
 #endif
@@ -844,7 +847,7 @@ bool applySpheyaPack9() {
 
     if(!applyTextEffects()) {
         vctfx_isShadow = 0.0;
-        if(Position.z == 0.0 && textData.isShadow) {
+        if(textData.isShadow) {
             textData.isShadow = false;
             if(applyTextEffects()) {
                 vctfx_isShadow = 0.0;
@@ -905,10 +908,8 @@ bool applySpheyaPack9() {
 
     }
     
-
-    vctfx_screenPos = gl_Position;
-    vertexDistance = length((ModelViewMat * vec4(Position, 1.0)).xyz);
     vertexColor = baseColor * lightColor;
+    vctfx_screenPos = gl_Position;
     texCoord0 = UV0;
     return true;
 }
