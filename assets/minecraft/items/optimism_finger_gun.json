@@ -1,0 +1,16 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/guns/optimism/optimism_finger_gun",
+        "tints": [
+            {
+                "type": "minecraft:dye",
+                "default": [
+                    1,
+                    1,
+                    1
+                ]
+            }
+        ]
+    }
+}

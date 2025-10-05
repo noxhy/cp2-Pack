@@ -1,0 +1,16 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/guns/bullseye/bullseye_pumpkin",
+        "tints": [
+            {
+                "type": "minecraft:dye",
+                "default": [
+                    1,
+                    1,
+                    1
+                ]
+            }
+        ]
+    }
+}

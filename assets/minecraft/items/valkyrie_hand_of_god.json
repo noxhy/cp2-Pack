@@ -1,0 +1,16 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/guns/valkyrie/valkyrie_hand_of_god",
+        "tints": [
+            {
+                "type": "minecraft:dye",
+                "default": [
+                    1,
+                    1,
+                    1
+                ]
+            }
+        ]
+    }
+}

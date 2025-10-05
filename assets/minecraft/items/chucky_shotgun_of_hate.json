@@ -1,0 +1,16 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/guns/chucky/chucky_shotgun_of_hate",
+        "tints": [
+            {
+                "type": "minecraft:dye",
+                "default": [
+                    1,
+                    1,
+                    1
+                ]
+            }
+        ]
+    }
+}

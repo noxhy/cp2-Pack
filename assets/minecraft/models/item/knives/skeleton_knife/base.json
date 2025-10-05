@@ -1,5 +1,9 @@
 {
+	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "item/knives/skeleton_knife/blooming"
+	},
 	"elements": [
 		{
 			"from": [7, 0, 6],

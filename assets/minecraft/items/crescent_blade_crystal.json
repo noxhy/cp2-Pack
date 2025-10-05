@@ -1,0 +1,16 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/knives/crescent_blade/crescent_blade_crystal",
+        "tints": [
+            {
+                "type": "minecraft:dye",
+                "default": [
+                    1,
+                    1,
+                    1
+                ]
+            }
+        ]
+    }
+}
