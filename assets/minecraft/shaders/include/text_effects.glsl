@@ -634,10 +634,11 @@ bool applyTextEffects() {
         TEXT_EFFECT( 48, 35, 51 )
         {
 
+            remove_text_shadow();
             textData.offset = vec2( -9. - 8., 14. );
             override_text_color( vec4( 0.15, 0.87, 0.51, 1. ) );
             apply_outline( vec3( 0.15, 0.87, 0.51 ) * 0.25 );
-            apply_shimmer(0.5, 0.25, rgb(255,255,255));
+            apply_shimmer(0.5, 0.25, rgb(255,255,255)); 
 
         }
 
@@ -645,6 +646,7 @@ bool applyTextEffects() {
         TEXT_EFFECT( 51, 35, 42 )
         {
 
+            remove_text_shadow();
             textData.offset = vec2( 7. + 8., 14. );
             override_text_color( vec4( 0.92, 0.3, 0.4, 1. ) );
             apply_outline( vec3( 0.92, 0.3, 0.4 ) * 0.25 );

@@ -1,7 +1,7 @@
 {
     "model": {
         "type": "minecraft:model",
-        "model": "minecraft:item/guns/deadlock/deadlock_partypopper",
+        "model": "minecraft:item/guns/desolation/desolation_hunting_season",
         "tints": [
             {
                 "type": "minecraft:dye",
