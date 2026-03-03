@@ -6,8 +6,8 @@
         {"type": "bitmap", "file": "gui/profile.png", "ascent": 13, "height": 256, "chars": ["e"]},
         {"type": "bitmap", "file": "gui/trading.png", "ascent": 13, "height": 256, "chars": ["f"]},
         {"type": "bitmap", "file": "gui/marketplace.png", "ascent": 13, "height": 256, "chars": ["g"]},
-        {"type": "bitmap", "file": "gui/play_menu.png", "ascent": 13, "height": 256, "chars": ["h"]}
-
+        {"type": "bitmap", "file": "gui/play_menu.png", "ascent": 13, "height": 256, "chars": ["h"]},
+        {"type": "bitmap", "file": "gui/voting.png", "ascent": 13, "height": 256, "chars": ["i"]}
     ]
 
 }
