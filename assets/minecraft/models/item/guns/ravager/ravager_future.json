@@ -1,8 +1,8 @@
 {
+	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "item/guns/ravager/future",
-		"1": "block/texture",
 		"particle": "item/guns/ravager/future"
 	},
 	"elements": [
@@ -24,12 +24,12 @@
 			"to": [9, 5, 9],
 			"rotation": {"angle": 0, "axis": "y", "origin": [6, 5, 4]},
 			"faces": {
-				"north": {"uv": [0.032, 4.032, 1.968, 4.968], "texture": "#1", "tintindex": 0},
-				"east": {"uv": [5.968, 3.032, 3.032, 3.968], "texture": "#1", "tintindex": 0},
-				"south": {"uv": [4.032, 0.032, 5.968, 0.968], "texture": "#1", "tintindex": 0},
-				"west": {"uv": [3.032, 3.032, 5.968, 3.968], "texture": "#1", "tintindex": 0},
-				"up": {"uv": [1.968, 2.968, 0.032, 0.032], "texture": "#1", "tintindex": 0},
-				"down": {"uv": [3.968, 0.032, 2.032, 2.968], "texture": "#1", "tintindex": 0}
+				"north": {"uv": [0, 1.782, 1.936, 2.718], "texture": "#0", "tintindex": 0},
+				"east": {"uv": [2.968, 1.782, 0.032, 2.718], "texture": "#0", "tintindex": 0},
+				"south": {"uv": [0, 1.782, 1.936, 2.718], "texture": "#0", "tintindex": 0},
+				"west": {"uv": [0, 1.782, 2.936, 2.718], "texture": "#0", "tintindex": 0},
+				"up": {"uv": [1.968, 3.468, 0.032, 1.782], "texture": "#0", "tintindex": 0},
+				"down": {"uv": [1.936, 1.782, 0, 3.468], "texture": "#0", "tintindex": 0}
 			}
 		},
 		{

@@ -654,28 +654,6 @@ bool applyTextEffects() {
 
         }
 
-        // Scope Crosshair
-        TEXT_EFFECT( 51, 51, 51 )
-        {
-
-            textData.offset = vec2( 7.5, -5. );
-            remove_text_shadow();
-            override_text_color( rgb( 255, 255, 255 ) );
-            textData.stretch = true;
-
-        }
-
-        // Scope Background
-        TEXT_EFFECT( 51, 51, 75 )
-        {
-
-            remove_text_shadow();
-            override_text_color( rgb( 255, 255, 255 ) );
-            textData.stretch = true;
-
-        }
-
-
         // Swap Characters
         TEXT_EFFECT( 51, 51, 56 )
         {

@@ -1,0 +1,8 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/guns/scope_accurate"
+    },
+    "hand_animation_on_swap": false,
+    "swap_animation_scale": 0
+}
