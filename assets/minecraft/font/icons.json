@@ -43,7 +43,8 @@
         {"type": "bitmap", "file": "font/icons/rank/diamond.png", "ascent": 8, "height": 8, "chars": ["5"]},
         {"type": "bitmap", "file": "font/icons/rank/amethyst.png", "ascent": 8, "height": 8, "chars": ["6"]},
         {"type": "bitmap", "file": "font/icons/lock.png", "ascent": 8, "height": 8, "chars": ["7"]},
-        {"type": "bitmap", "file": "font/icons/unlocked.png", "ascent": 8, "height": 8, "chars": ["8"]}
+        {"type": "bitmap", "file": "font/icons/unlocked.png", "ascent": 8, "height": 8, "chars": ["8"]},
+        {"type": "bitmap", "file": "font/open_your_inventory.png", "ascent": 32, "height": 64, "chars": ["9"]}
 
 
     ]
