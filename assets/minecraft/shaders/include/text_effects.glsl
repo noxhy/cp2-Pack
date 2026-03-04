@@ -456,6 +456,15 @@ void apply_aroace_pride() {
     if(textData.isShadow) textData.color.rgb *= 0.25;
 }
 
+bool is_crosshair() {
+    if ((textData.color.r >= 69. / 255. && textData.color.r <= 79. / 255.) && (textData.color.g == 77. / 255.)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
 void apply_non_binary_pride() {
     int y = int(floor((textData.uv.y - textData.uvMin.y) * 256.0));
 
@@ -584,17 +593,6 @@ bool applyTextEffects() {
             textData.offset.x = 46.;
             override_text_color( vec4( 1., 1., 1., 0.8 ) );
             textData.stupidWorkaround = true;
-
-        }
-
-
-        // Crosshair Icons
-        TEXT_EFFECT( 51, 4, 51 )
-        {
-
-            remove_text_shadow();
-            override_text_color( rgb( 255, 255, 255 ) );
-            textData.offset.y = 33;
 
         }
 
@@ -731,6 +729,9 @@ in vec3 vctfx_uvpos3;
 in vec3 vctfx_uvpos4;
 
 bool applySpheyaPack9() {
+    if (is_crosshair()) {
+        return false;
+    }
     if(vctfx_applyTextEffect < 0.5) return false;
 
     textData.isShadow = vctfx_isShadow > 0.5;
@@ -812,7 +813,9 @@ out vec3 vctfx_uvpos3;
 out vec3 vctfx_uvpos4;
 
 bool applySpheyaPack9() {
-
+    if (is_crosshair()) {
+        return false;
+    }
     gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
 
     int gui_scale = guiScale( ProjMat, ScreenSize );
