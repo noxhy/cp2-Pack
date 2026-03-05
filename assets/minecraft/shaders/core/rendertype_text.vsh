@@ -85,20 +85,22 @@ void main() {
 
         vertexPosition += vec2((ScreenSize.x / 2.), -(ScreenSize.y / 2.));
 
+        int gap = int(ScreenSize.x / getScreenFOV(ProjMat));
+
         if (Color.r == 74. / 255.) {
-            vertexPosition.x -= (blueChannel * CROSSHAIR_GAP);
+            vertexPosition.x -= (blueChannel * gap);
         }
 
         if (Color.r == 75. / 255.) {
-            vertexPosition.x += (blueChannel * CROSSHAIR_GAP);
+            vertexPosition.x += (blueChannel * gap);
         }
 
         if (Color.r == 76. / 255.) {
-            vertexPosition.y += (blueChannel * CROSSHAIR_GAP);
+            vertexPosition.y += (blueChannel * gap);
         }
 
         if (Color.r == 77. / 255.) {
-            vertexPosition.y -= (blueChannel * CROSSHAIR_GAP);
+            vertexPosition.y -= (blueChannel * gap);
         }
 
         vertexPosition *= pixelSize;
