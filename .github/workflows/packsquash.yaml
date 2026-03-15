@@ -37,7 +37,7 @@ jobs:
             ['**/{README.md}']
             force_include = true
             
-            skip_alpha_optimizations = false
+            skip_alpha_optimizations = true
             
       - name: Tag and create release
         uses: softprops/action-gh-release@v2
