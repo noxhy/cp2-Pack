@@ -3,9 +3,9 @@
 		{
 			"type": "bitmap",
 			"file": "gui/crosshairs.png",
-			"ascent": 7,
-			"height": 7,
-			"chars": ["ABC"]
+			"ascent": 10,
+			"height": 10,
+			"chars": ["AB", "CD"]
 		}
 	]
 }
