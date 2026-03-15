@@ -37,8 +37,9 @@ jobs:
             ['**/{README.md}']
             force_include = true
 
-            # For crosshairs
-            ['**/*?.{png}']
+            ['**/crosshairs.png']
+            image_data_compression_iterations = 0
+            skip_alpha_optimizations = true
             color_quantization_target = 'none'
             
       - name: Tag and create release
