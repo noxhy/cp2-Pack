@@ -5,7 +5,7 @@
 			"file": "gui/crosshairs.png",
 			"ascent": 10,
 			"height": 10,
-			"chars": ["AB", "CD"]
+			"chars": ["ABCDE"]
 		}
 	]
 }
