@@ -13,7 +13,8 @@ jobs:
         uses: ComunidadAylas/PackSquash-action@v4
         with:
           packsquash_version: latest
-          options: |
+          options:
+            skip_alpha_optimizations = true
             # Optimize the pack in the root repository directory.
             # This is the default value for pack_directory when no PackSquash options are defined
             pack_directory = '.'
@@ -36,8 +37,6 @@ jobs:
             # Include README
             ['**/{README.md}']
             force_include = true
-            
-            skip_alpha_optimizations = true
             
       - name: Tag and create release
         uses: softprops/action-gh-release@v2
