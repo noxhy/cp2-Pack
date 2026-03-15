@@ -39,7 +39,7 @@ jobs:
 
             # For crosshairs
             ['**/*?.{png}']
-            skip_alpha_optimizations = true
+            color_quantization_target = 'none'
             
       - name: Tag and create release
         uses: softprops/action-gh-release@v2
