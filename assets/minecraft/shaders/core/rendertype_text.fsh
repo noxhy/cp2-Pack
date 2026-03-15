@@ -20,7 +20,6 @@ out vec4 fragColor;
 #moj_import <spheya_packs_impl.glsl>
 
 void main() {
-    if(cp2_apply_crosshair()) return;
     if(applySpheyaPacks()) return;
 
     vec4 color = texture(Sampler0, texCoord0) * vertexColor * ColorModulator;
