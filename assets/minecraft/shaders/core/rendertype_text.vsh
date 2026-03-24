@@ -19,6 +19,7 @@ out float sphericalVertexDistance;
 out float cylindricalVertexDistance;
 out vec4 vertexColor;
 out vec2 texCoord0;
+flat out bool crosshairApplied;
 
 out vec4 baseColor;
 out vec4 lightColor;
@@ -37,6 +38,7 @@ void main() {
     vertexColor = baseColor * lightColor;
     texCoord0 = UV0;
 
-    if(cp2_apply_crosshair()) return;
-    if(applySpheyaPacks()) return;
+    crosshairApplied = cp2_apply_crosshair();
+    if (crosshairApplied) return;
+    if (applySpheyaPacks()) return;
 }
