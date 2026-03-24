@@ -96,8 +96,8 @@ bool cp2_apply_crosshair() {
             gl_Position.x += offsetX;
             break;
     }
-    gl_Position.x += tan(hAngle) / horizontalScale;
-    gl_Position.y -= tan(vAngle) / verticalScale;
+    gl_Position.x -= tan(hAngle) / horizontalScale;
+    gl_Position.y += tan(vAngle) / verticalScale;
     gl_Position.z += 0.0001 * float(zIndex);
 
     // Apply the color from a predefined palette (4-bit)
