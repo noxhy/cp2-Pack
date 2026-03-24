@@ -12,7 +12,7 @@ in float sphericalVertexDistance;
 in float cylindricalVertexDistance;
 in vec4 vertexColor;
 in vec2 texCoord0;
-flat in bool crosshairApplied;
+flat in int crosshairApplied;
 in vec4 baseColor;
 in vec4 lightColor;
 
@@ -21,7 +21,7 @@ out vec4 fragColor;
 #moj_import <spheya_packs_impl.glsl>
 
 void main() {
-    if (!crosshairApplied) {
+    if (crosshairApplied == 0) {
       if (applySpheyaPacks()) return;
     }
     vec4 color = texture(Sampler0, texCoord0) * vertexColor * ColorModulator;
