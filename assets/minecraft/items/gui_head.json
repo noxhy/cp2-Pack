@@ -4,6 +4,7 @@
     "base": "minecraft:item/gui/guihead",
     "model": {
       "type": "minecraft:player_head"
-    }
+    },
+    "oversized_in_gui": true
   }
 }

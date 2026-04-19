@@ -32,11 +32,11 @@ void main() {
     gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
 
     baseColor = Color;
-    lightColor = texelFetch(Sampler2, UV2 / 16, 0);
+    lightColor = sample_lightmap(Sampler2, UV2);
 
     sphericalVertexDistance = fog_spherical_distance(Position);
     cylindricalVertexDistance = fog_cylindrical_distance(Position);
-    vertexColor = Color * sample_lightmap(Sampler2, UV2);
+    vertexColor = Color * lightColor;
     texCoord0 = UV0;
 
     crosshairApplied = 0;
