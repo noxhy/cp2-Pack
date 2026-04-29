@@ -41,7 +41,7 @@ float getFOV(mat4 ProjMat) {
 }
 
 vec2 getCenter(sampler2D sampler, int id) {
-    vec2 shift = textureSize(sampler, 0)/2.;
+    vec2 shift = textureSize(sampler, 0) / 2.;
 
     shift.x *= ((id >> 1) - 0.5) * -2;
     shift.y *= (((id+1) >> 1 & 1) - 0.5 ) * 2;
@@ -850,11 +850,10 @@ bool applySpheyaPack9() {
     gl_Position.y += ( gui_scale * textData.offset.y ) / ScreenSize.y;
 
     if(textData.stupidWorkaround) {
-
         vec2 center = getCenter( Sampler2, gl_VertexID % 4 );
-        center.y /= ScreenSize.y / gui_scale * 1.;
-        gl_Position.y = 0.-center.y-( gui_scale * 46.5 ) / ScreenSize.y;
-
+        center.y /= ScreenSize.y / (gui_scale * 16.);
+        gl_Position.y = 0. - center.y;
+        gl_Position.y -= (gui_scale * 46.5) / ScreenSize.y;
     }
 
     if(textureSize(Sampler0, 0) != ivec2(256, 256)) {
