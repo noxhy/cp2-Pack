@@ -3,7 +3,7 @@
     {
       "type": "bitmap",
       "file": "font/hud.png",
-      "ascent": -24,
+      "ascent": -23,
       "height": 16,
       "chars": [
         "a"
