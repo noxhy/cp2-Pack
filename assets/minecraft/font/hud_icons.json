@@ -1,0 +1,14 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "font/hud_icons.png",
+      "ascent": -22,
+      "height": 16,
+      "chars": [
+        "abcde",
+        "ABCDE"
+      ]
+    }
+  ]
+}
