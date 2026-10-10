@@ -112,7 +112,8 @@ void main() {
         return;
     }
 
-    vec4 color = texture(Sampler0, uv) * vertexColor * ColorModulator;
+    // Intensity variant: texture is R8 (SDF font), sample red channel as alpha
+    vec4 color = texture(Sampler0, uv).rrrr * vertexColor * ColorModulator;
 
     TextData textData;
     textData.uv = uv;

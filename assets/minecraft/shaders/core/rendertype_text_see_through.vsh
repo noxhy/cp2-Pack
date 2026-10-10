@@ -40,7 +40,6 @@ out vec3 fshGlyphT3;
 out float fshDisplayAlpha;
 
 #moj_import <text_effects_utils.glsl>
-#moj_import <crosshair.glsl>
 
 void main() {
     gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
@@ -69,12 +68,6 @@ void main() {
     fshGlyphT2 = vec3(0.0);
     fshGlyphT3 = vec3(0.0);
     fshDisplayAlpha = Color.a;
-
-    crosshairApplied = 0;
-    if (cp2_apply_crosshair()) {
-      crosshairApplied = 1;
-      return;
-    }
 
     applyTextEffects();
 }

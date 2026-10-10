@@ -1,21 +1,27 @@
-#version 150
+#version 330
 
-#moj_import <fog.glsl>
+#if !defined(IS_GUI) && !defined(IS_SEE_THROUGH)
+#moj_import <minecraft:fog.glsl>
+#moj_import <minecraft:sample_lightmap.glsl>
+#endif
 
-uniform mat4 ProjMat;
-uniform mat4 ModelViewMat;
-uniform vec4 ColorModulator;
-uniform float GameTime;
-uniform int FogShape;
+#moj_import <minecraft:dynamictransforms.glsl>
+#moj_import <minecraft:projection.glsl>
+#moj_import <minecraft:globals.glsl>
 
 in vec3 Position;
 in vec4 Color;
 in vec2 UV0;
+#if !defined(IS_GUI) && !defined(IS_SEE_THROUGH)
 in ivec2 UV2;
+#endif
 
+#if !defined(IS_GUI) && !defined(IS_SEE_THROUGH)
 uniform sampler2D Sampler2;
+out float sphericalVertexDistance;
+out float cylindricalVertexDistance;
+#endif
 
-out float vertexDistance;
 out vec4 vertexColor;
 out vec2 texCoord0;
 
@@ -39,15 +45,16 @@ out vec3 fshGlyphT2;
 out vec3 fshGlyphT3;
 out float fshDisplayAlpha;
 
-#moj_import <text_effects_utils.glsl>
-#moj_import <crosshair.glsl>
+#moj_import <minecraft:text_effects_utils.glsl>
 
 void main() {
     gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
 
-    vec4 viewPos = ModelViewMat * vec4(Position, 1.0);
-    vertexDistance = FogShape == 0 ? length(viewPos.xyz) : max(length(viewPos.xz), abs(viewPos.y));
-    vertexColor = Color * texelFetch(Sampler2, UV2 / 16, 0);
+#if !defined(IS_GUI) && !defined(IS_SEE_THROUGH)
+    sphericalVertexDistance = fog_spherical_distance(Position);
+    cylindricalVertexDistance = fog_cylindrical_distance(Position);
+#endif
+
     texCoord0 = UV0;
 
     spinT0 = vec3(0.0);
@@ -69,12 +76,6 @@ void main() {
     fshGlyphT2 = vec3(0.0);
     fshGlyphT3 = vec3(0.0);
     fshDisplayAlpha = Color.a;
-
-    crosshairApplied = 0;
-    if (cp2_apply_crosshair()) {
-      crosshairApplied = 1;
-      return;
-    }
 
     applyTextEffects();
 }
