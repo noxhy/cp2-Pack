@@ -1,25 +1,16 @@
 {
     "pack": {
-        "pack_format": 96,
+        "pack_format": 97,
         "min_format": 88,
-        "max_format": 96,
+        "max_format": 97,
         "description": "by Noah, pixlii, Francidium, Floophead + endersaltz"
     },
 
     "overlays": {
         "entries": [
             {
-                "formats": {
-                "min_inclusive": 88,
-                "max_inclusive": 96
-                },
                 "min_format": 88,
-                "max_format": 96,
-                "directory": "26_2"
-            },
-            {
-                "min_format": 88,
-                "max_format": 96,
+                "max_format": 97,
                 "directory": "overlay_18"
             }
         ]
